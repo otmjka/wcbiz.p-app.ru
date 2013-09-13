@@ -1,0 +1,26 @@
+$popover-bg:                          #575756;
+
+// $popover-max-width:                   276px !default;
+// $popover-border-color:                rgba(0,0,0,.2) !default;
+// $popover-fallback-border-color:       #ccc !default;
+
+ $popover-title-bg:                   	$popover-bg;
+
+$popover-arrow-width:                 6px;
+$popover-arrow-color:                 $popover-bg;
+
+$popover-arrow-width1:                 20px;
+
+
+
+ $popover-arrow-outer-width:           ($popover-arrow-width + 1);
+ $popover-arrow-outer-width1:           ($popover-arrow-width1 + 1);
+// $popover-arrow-outer-color:           rgba(0,0,0,.25) !default;
+// $popover-arrow-outer-fallback-color:  #999 !default;
+
+
+$font-family-sans-serif:  "segoeui1", sans-serif;
+$border-radius-base:             0px;
+$border-radius-large:            0px;
+$border-radius-small:            0px;
+

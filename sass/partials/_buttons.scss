@@ -1,0 +1,86 @@
+$btnGreen: rgba( 149, 193, 	31, 1 );
+$btnGreenHover: rgba( 149, 193, 	31, .9 );
+$btnRed: #E94E1B;
+$btnRedHover: rgba( 233, 78, 	27, .9 );
+$btnBlue: #36A9E1;
+$btnBlueHover: rgba( 54, 169, 225, .9 );
+$btnlightGray: #B2B2B2;
+$btnlightGrayHover: rgba( 178, 178, 178, .9 );
+$btnGray: #3C3C3B;
+$btnGrayHover: rgba( 60, 60, 59, .9 );
+//btn size var
+$viewport: 935; 
+
+$cLarge: 504;
+$cMedium: 144;
+$cNormal: 117;
+$cSmall: 45;
+
+$perLarge: $cLarge / $viewport * 100; 
+$perMedium: $cMedium / $viewport * 100; 
+$perNormal: $cNormal / $viewport * 100; 
+$perSmall: $cSmall / $viewport * 100;
+@mixin btn-color($color, $colorLight){
+	background-color: $color;
+		&:hover{
+			background-color: $colorLight;		 
+			color: #fff;
+		}
+}
+
+input{
+	@include border-radius(0 !important);
+}
+
+.btn{
+	@include border-radius(0 !important);
+
+}
+.btn-custom{
+	@include border-radius(0);
+	font-size: 14px;
+	padding: 5px 14px 7px 14px;
+	text-align: center; 
+	color: #fff;
+	line-height: 1;
+}
+
+//for demo
+span .btn-custom{
+	width: 100%;
+}
+
+.btn-size-large{
+	display: inline-block;
+	width: 0% + $perLarge;
+}
+.btn-size-medium{
+	display: inline-block;
+	width: 0% + $perMedium;
+}
+
+.btn-size-normal{
+	display: inline-block;
+	width: 0% + $perNormal;
+}
+
+.btn-size-small{
+	display: inline-block;
+	width: 0% + $perSmall;
+}
+.btn-color-green{
+	@include btn-color( $btnGreen, $btnGreenHover );
+}
+.btn-color-red{
+	@include btn-color( $btnRed, $btnRedHover );
+}
+
+.btn-color-blue{
+	@include btn-color( $btnBlue, $btnBlueHover );
+}
+.btn-color-lightGray{
+	@include btn-color( $btnlightGray, $btnlightGrayHover );
+}
+.btn-color-Gray{
+	@include btn-color( $btnGray, $btnGrayHover );
+}

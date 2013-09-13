@@ -1,0 +1,27 @@
+@mixin font-face($cssname, $filename){
+	
+		font-family: '#{$cssname}';
+		//src: url('../fonts/fontscore.com_d-dinproregular.eot');
+		src: local('☺'), 
+			//url('../fonts/fontscore.com_d-dinproregular.woff') format('woff'), 
+			url('../fonts/#{$filename}.ttf') format('truetype');
+			//url('../fonts/fontscore.com_d-dinproregular.svg') format('svg');
+	
+	}
+
+$cssName: "segoeui1";
+$cssFontName: "segoeui1";
+$cssFileName: "segoeui";
+$cssFileName_SL: "segoeuil";
+@font-face {
+	@include font-face( $cssName, $cssFileName );
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	@include font-face( $cssFileName_SL, $cssFileName_SL );
+	font-weight: lighter;
+	font-style: normal;
+}
+
+

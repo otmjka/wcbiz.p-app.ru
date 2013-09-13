@@ -1,0 +1,39 @@
+@mixin placeholder-color($selector, $color){
+	#{$selector}{
+		@each $br in -webkit-input-placeholder, -moz-placeholder{
+			&::#{$br} { /* WebKit browsers */
+			    color: $color;
+			}
+		}
+	
+		@each $br in -moz-placeholder, -ms-input-placeholder{
+			&:#{$br} { /* WebKit browsers */
+			    color: $color;
+			}
+		}
+	}
+}
+
+@mixin shadow($parStr){
+  -webkit-box-shadow: #{$parStr};
+  -moz-box-shadow: #{$parStr};
+  box-shadow: #{$parStr};  
+}
+
+@mixin bg-img($name){
+  $imageDir: "../img/wcbiz.p-app.ru/";
+  background-image: url(#{$imageDir}#{$name});
+  background-repeat: no-repeat;
+  background-position: left top; 
+}
+
+@mixin bk-pos-hover-activ-y( $posx ){
+	background-position: $posx 0;
+	&:hover{
+		background-position: $posx -30px;
+	}
+	&:active{
+		background-position: $posx -61px;
+	}	
+}
+
