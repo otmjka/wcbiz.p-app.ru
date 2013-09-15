@@ -1,13 +1,14 @@
 
 //Imports
 //@import "vendors/_compass";
+@import "partials/_mixins";
 @import "compass/css3/";
 @import "lib/_bootstrap";
 @import "partials/_fonts";
 @import "partials/_varibles";
 	$navBgColor: rgba( 143, 143, 143, 1 );
 	$navBgColorHover: rgba( 0, 141, 201, 1 );
-@import "partials/_mixins";
+
 //Buttons styles
 @import "partials/_buttons";
 //Common Resets Styles
@@ -31,10 +32,7 @@ body{
 
 
 
-a{
-	color: #36A9E1;
-	&:hover{color: #F29100;}
-}
+
 
 //Bootstrap Reset Classes
 .container{
@@ -190,6 +188,7 @@ input.form-control{
 			line-height: 1.2;
 			color: #575756; 
 		}
+		
 		&.bottom-social{
 			margin-top: 30px;
 			a{
@@ -295,3 +294,68 @@ input.form-control{
 }
 
 
+.search-bank{
+	width: 270px;
+	&.btn-custom{
+		text-align: left;
+		padding: 11px 9px;
+		font-size: 12px;
+	}
+	&.btn:hover{
+		color: #fff;
+	}
+	
+}
+.collapsed{
+		.caret{
+			border-top: 4px solid #fff;
+			border-bottom: 0 dotted;
+		}			
+	}
+	.caret{
+		border-bottom: 4px solid #fff;
+		border-top: 0 dotted;
+	}
+
+.mini{
+	&.btn-custom{
+		padding: 10px 4px;
+	}
+	&.collapsed{
+		.caret{
+			border-top: 4px solid #fff;
+			border-bottom: 0 dotted;
+		}			
+	}
+	.caret{
+		border-bottom: 4px solid #fff;
+		border-top: 0 dotted;
+	}
+}
+
+a.social{
+			display: inline-block;
+			@include bg-img("social.png");
+			width: 29px;
+			height: 29px;
+			margin: 0 0 0 5px;
+			background-color: white;
+			&:first-child{
+				margin: 0;
+			}
+			@include bk-pos-hover-activ-y( 0px );
+			&.fb{
+				@include bk-pos-hover-activ-y( -35px );
+			}
+			&.vk{
+				@include bk-pos-hover-activ-y( -70px );
+				background-position: -70px 0;
+			}			
+		}
+
+.social-dropdown-toggle{
+	width: 143px;
+	text-align: center;
+	background-color: $brand-success;
+	padding: 9px 7px;
+}

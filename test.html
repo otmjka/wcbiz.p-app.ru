@@ -5,10 +5,9 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <title></title>
-    <link href="dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="fuelux/dist/css/fuelux.css" rel="stylesheet">
+    
     <link href="css/index.css" rel="stylesheet">
-    <script src="fuelux/lib/require.js"></script>
+    <link href="css/test.css" rel="stylesheet">
     <!--[if lt IE 9]>
       <script src="assets/js/html5shiv.js"></script>
       <script src="assets/js/respond.min.js"></script>
@@ -17,45 +16,8 @@
   </head>
 
   <body>
-    <script>
-    requirejs.config({
-          paths: {
-            'jquery': 'js/jquery',
-            'underscore': 'http://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.3.3/underscore-min',
-            'bootstrap': 'fuelux/lib/bootstrap/js',
-            'fuelux': 'fuelux/src'
-          }
-        });
+    
 
-    require(['jquery', 'fuelux/all'], function ($) {
-      $('#btnComboboxDisable').on('click', function () {
-        $('#MyCombobox').combobox('disable');
-      });
-      $('#btnComboboxEnable').on('click', function () {
-        $('#MyCombobox').combobox('enable');
-      });
-      $('#btnComboboxGetSelectedItem').on('click', function () {
-        console.log($('#MyCombobox').combobox('selectedItem'));
-      });
-      $('#btnComboboxSelectByValue').on('click', function () {
-        $('#MyCombobox').combobox('selectByValue', '3');
-      });
-      $('#btnComboboxSelectBySelector').on('click', function () {
-        $('#MyCombobox').combobox('selectBySelector', 'li[data-fizz=buzz]');
-      });
-      $('#btnComboboxSelectByIndex').on('click', function () {
-        $('#MyCombobox').combobox('selectByIndex', '3');
-      });
-      $('#btnComboboxSelectByText').on('click', function () {
-        $('#MyCombobox').combobox('selectByText', 'Four');
-      });
-      $('#MyCombobox').on('changed', function (evt, data) {
-        console.log(data);
-      });
-      // tooltips
-      $('.bs-example-tooltips button').tooltip();
-    });
-    </script>
     <div class="container">
     <div id="MyCombobox" class="input-append dropdown combobox">
       <input class="span2" type="text">
@@ -193,6 +155,24 @@
           <div class="clearfix"></div>
 
     </div>
+    <h2>collapse + searchbar</h2>
+    <div class="btn-group">
+    <button type="button" class="btn btn-custom btn-color-blue collapsed search-bank" data-toggle="collapse" data-target="#demo">Выберите наименование банка</button><button class="btn btn-custom btn-color-blue collapsed mini" data-toggle="collapse" data-target="#demo"><span class="caret"></span></button>
+    <div class="clearfix"></div>
+    
+    <div id="demo" class="collapse out">
+      <div class="form-group">
+      <div class="input-group">
+              <input type="text" class="form-control" id="search-bank" placeholder="Поиск...">
+                <span class="input-group-btn">
+                <button class="btn btn-custom search-icon" type="button"><span class="glyphicon glyphicon-search"></span></button>
+                </span>
+            </div><!-- /input-group -->  
+            </div>
+    </div>
+    </div>
+
+    
     <div class="custom-btn-group" id="buttons-green">
       <span class="btn-size-large">
       <button type="button" class="btn btn-custom btn-color-green">Большая кнопка</button>
@@ -263,12 +243,89 @@
       <button type="button" class="btn btn-custom btn-color-Gray">мк</button>
       </span>
     </div>
-    <div class="alert alert-warning">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+
+<div class="custom-btn-group" id="buttons-green">
+      <span class="btn-size-large">
+      <button type="button" class="btn btn-default btn-block">.btn .btn-default .btn-block</button>
+      </span>
+      <span class="btn-size-medium">
+      <button type="button" class="btn btn-default btn-block">Средняя кнопка</button>
+      </span>
+      <span class="btn-size-normal">
+      <button type="button" class="btn btn-default btn-block">Обычная</button>
+      </span>
+      <span class="btn-size-small">
+      <button type="button" class="btn btn-default btn-block">мк</button>
+      </span>
+    </div>
+    <div class="custom-btn-group" id="buttons-green">
+      <span class="btn-size-large">
+      <button type="button" class="btn btn-default btn-success btn-block">btn.btn-default.btn-success.btn-block</button>
+      </span>
+      <span class="btn-size-medium">
+      <button type="button" class="btn btn-default btn-success btn-block">Средняя кнопка</button>
+      </span>
+      <span class="btn-size-normal">
+      <button type="button" class="btn btn-default btn-success btn-block">Обычная</button>
+      </span>
+      <span class="btn-size-small">
+      <button type="button" class="btn btn-default btn-success btn-block">мк</button>
+      </span>
+    </div>
+    <div class="custom-btn-group" id="buttons-red">
+      <span class="btn-size-large">
+      <button type="button" class="btn btn-default btn-danger btn-block">.btn.btn-default.btn-danger.btn-block</button>
+      </span>
+      <span class="btn-size-medium">
+      <button type="button" class="btn btn-default btn-danger btn-block">Средняя кнопка</button>
+      </span>
+      <span class="btn-size-normal">
+      <button type="button" class="btn btn-default btn-danger btn-block">Обычная</button>
+      </span>
+      <span class="btn-size-small">
+      <button type="button" class="btn btn-default btn-danger btn-block">мк</button>
+      </span>
+    </div>
+    <div class="custom-btn-group" id="buttons-blue">
+      <span class="btn-size-large">
+      <button type="button" class="btn btn-default btn-info btn-block">btn.btn-default.btn-danger.btn-block</button>
+      </span>
+      <span class="btn-size-medium">
+      <button type="button" class="btn btn-default btn-info btn-block">Средняя кнопка</button>
+      </span>
+      <span class="btn-size-normal">
+      <button type="button" class="btn btn-default btn-info btn-block">Обычная</button>
+      </span>
+      <span class="btn-size-small">
+      <button type="button" class="btn btn-default btn-info btn-block">мк</button>
+      </span>
+    </div>
+    <div class="custom-btn-group" id="buttons-Gray">
+      <span class="btn-size-large">
+      <button type="button" class="btn btn-default btn-primary btn-block">btn.btn-default.btn-primary.btn-block</button>
+      </span>
+      <span class="btn-size-medium">
+      <button type="button" class="btn btn-default btn-primary btn-block">Средняя кнопка</button>
+      </span>
+      <span class="btn-size-normal">
+      <button type="button" class="btn btn-default btn-primary btn-block">Обычная</button>
+      </span>
+      <span class="btn-size-small">
+      <button type="button" class="btn btn-default btn-primary btn-block">мк</button>
+      </span>
+    </div>
+    <div class="btn-group">
+    <button type="button" class="btn btn-default btn-md btn-success collapsed" data-toggle="collapse" data-target="#social-toggle">Поделиться</button>
+    <button class="btn btn-default btn-success btn-dropdown-icon collapsed" data-toggle="collapse" data-target="#social-toggle"><span class="caret"></span></button>
+    </div>
+    
+    <div id="social-toggle" class="social-dropdown-toggle collapse out">
+      <a class="social tw" href="https://twitter.com/web_capital" title="twitter" target="_blank"></a>
+      <a class="social fb" href="https://ru-ru.facebook.com/pages/WEB-CAPITALRU/131969930225573" title="facebook" target="_blank"></a>
+      <a class="social vk" href="http://vk.com/webcapital" title="vkontakte" target="_blank"></a>
+    </div>
+
+    <div class="alert alert-warning">предупреждение</div>
     <div class="alert alert-danger">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
     tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
     quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
@@ -288,6 +345,14 @@
     <!-- Placed at the end of the document so the pages load faster -->
     
     <script src="js/jquery.js"></script>
+    <script src="dist/js/typeahead.js"></script>  
     <script src="dist/js/bootstrap.min.js"></script>    
+    <script src="json/banks.js"></script>    
+    
+    <script type="text/javascript">
+      jQuery(document).ready( function($){
+        //$('#search-bank').typeahead({local: banks});
+      });
+    </script>      
   </body>
 </html>

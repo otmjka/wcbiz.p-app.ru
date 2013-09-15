@@ -18,24 +18,45 @@ $gray-lighter:           lighten(#000, 93.5%) !default; // #eee
 // Brand colors
 // -------------------------
 
-$brand-primary:         #428bca !default;
-$brand-success:         #5cb85c !default;
+// $brand-primary:         #428bca !default;
+// $brand-success:         #5cb85c !default;
+// $brand-warning:         #f0ad4e !default;
+// $brand-danger:          #d9534f !default;
+// $brand-info:            #5bc0de !default;
+
+// $brand-primary:         #3C3C3B !default;
+$brand-primary:         #36A9E1 !default;
+
+$brand-success:         #95C11F !default;
 $brand-warning:         #f0ad4e !default;
-$brand-danger:          #d9534f !default;
-$brand-info:            #5bc0de !default;
+$brand-danger:          #E94E1B !default;
+$brand-info:            #36A9E1 !default;
+
+// $btnGreen: #95C11F;
+// $btnGreenHover: rgba( 149, 193, 	31, .9 );
+// $btnRed: #E94E1B;
+// $btnRedHover: rgba( 233, 78, 	27, .9 );
+// $btnBlue: #36A9E1;
+// $btnBlueHover: rgba( 54, 169, 225, .9 );
+// $btnlightGray: #B2B2B2;
+// $btnlightGrayHover: rgba( 178, 178, 178, .9 );
+// $btnGray: #3C3C3B;
+// $btnGrayHover: rgba( 60, 60, 59, .9 );
 
 // Scaffolding
 // -------------------------
 
 $body-bg:               #fff !default;
-$text-color:            $gray-dark !default;
+// $text-color:            $gray-dark !default;
+$text-color:            #575756 !default;
 
 // Links
 // -------------------------
 
 $link-color:            $brand-primary !default;
-$link-hover-color:      darken($link-color, 15%) !default;
-
+//$link-hover-color:      darken($link-color, 15%) !default;
+$link-active-color:			#FFBA00 !default;
+$link-hover-color:      $brand-primary !default;
 // Typography
 // -------------------------
 
@@ -78,9 +99,13 @@ $padding-small-horizontal:       10px !default;
 $line-height-large:              1.33 !default;
 $line-height-small:              1.5 !default;
 
-$border-radius-base:             4px !default;
-$border-radius-large:            6px !default;
-$border-radius-small:            3px !default;
+// $border-radius-base:             4px !default;
+// $border-radius-large:            6px !default;
+// $border-radius-small:            3px !default;
+
+$border-radius-base:             0px !default;
+$border-radius-large:            0px !default;
+$border-radius-small:            0px !default;
 
 $component-active-bg:            $brand-primary !default;
 
@@ -100,15 +125,18 @@ $table-bg-active:                    $table-bg-hover !default;
 
 $table-border-color:                 #ddd !default; // table and cell border
 
-
-// Buttons
+//#
+// Buttons 
 // -------------------------
+//my
+
+///.my
 
 $btn-font-weight:                normal !default;
 
-$btn-default-color:              #333 !default;
-$btn-default-bg:                 #fff !default;
-$btn-default-border:             #ccc !default;
+$btn-default-color:              #fff !default;
+$btn-default-bg:                 #B2B2B2 !default;
+$btn-default-border:             #000 !default;
 
 $btn-primary-color:              #fff !default;
 $btn-primary-bg:                 $brand-primary !default;
@@ -131,7 +159,36 @@ $btn-info-bg:                    $brand-info !default;
 $btn-info-border:                darken($btn-info-bg, 5%) !default;
 
 $btn-link-disabled-color:        $gray-light !default;
+// Buttons 
+// -------------------------
 
+// $btn-font-weight:                normal !default;
+
+// $btn-default-color:              #333 !default;
+// $btn-default-bg:                 #fff !default;
+// $btn-default-border:             #ccc !default;
+
+// $btn-primary-color:              #fff !default;
+// $btn-primary-bg:                 $brand-primary !default;
+// $btn-primary-border:             darken($btn-primary-bg, 5%) !default;
+
+// $btn-success-color:              #fff !default;
+// $btn-success-bg:                 $brand-success !default;
+// $btn-success-border:             darken($btn-success-bg, 5%) !default;
+
+// $btn-warning-color:              #fff !default;
+// $btn-warning-bg:                 $brand-warning !default;
+// $btn-warning-border:             darken($btn-warning-bg, 5%) !default;
+
+// $btn-danger-color:               #fff !default;
+// $btn-danger-bg:                  $brand-danger !default;
+// $btn-danger-border:              darken($btn-danger-bg, 5%) !default;
+
+// $btn-info-color:                 #fff !default;
+// $btn-info-bg:                    $brand-info !default;
+// $btn-info-border:                darken($btn-info-bg, 5%) !default;
+
+// $btn-link-disabled-color:        $gray-light !default;
 
 // Forms
 // -------------------------
@@ -438,25 +495,41 @@ $modal-footer-border-color:   $modal-header-border-color !default;
 
 // Alerts
 // -------------------------
-$alert-padding:               15px !default;
+$alert-padding:               8px !default;
 $alert-border-radius:         $border-radius-base !default;
 $alert-link-font-weight:      bold !default;
 
-$alert-success-bg:            $state-success-bg !default;
-$alert-success-text:          $state-success-text !default;
-$alert-success-border:        $state-success-border !default;
+// $alert-success-bg:            $state-success-bg !default;
+// $alert-success-text:          $state-success-text !default;
+// $alert-success-border:        $state-success-border !default;
 
-$alert-info-bg:               $state-info-bg !default;
-$alert-info-text:             $state-info-text !default;
-$alert-info-border:           $state-info-border !default;
+$alert-info-bg:            transparent !default;
+$alert-info-text:          $text-color !default;
+$alert-info-border:        #F39200 !default;
 
-$alert-warning-bg:            $state-warning-bg !default;
-$alert-warning-text:          $state-warning-text !default;
-$alert-warning-border:        $state-warning-border !default;
+$alert-warning-bg:            transparent !default;
+$alert-warning-text:          $text-color !default;
+$alert-warning-border:        #F39200 !default;
 
-$alert-danger-bg:             $state-danger-bg !default;
-$alert-danger-text:           $state-danger-text !default;
-$alert-danger-border:         $state-danger-border !default;
+
+// $alert-info-bg:               $state-info-bg !default;
+// $alert-info-text:             $state-info-text !default;
+// $alert-info-border:           $state-info-border !default;
+
+// $alert-warning-bg:            $state-warning-bg !default;
+// $alert-warning-text:          $state-warning-text !default;
+// $alert-warning-border:        $state-warning-border !default;
+
+$alert-danger-bg:             transparent !default;
+$alert-danger-text:           $text-color !default;
+$alert-danger-border:         #E94E1B !default;
+// $alert-danger-bg:             $state-danger-bg !default;
+// $alert-danger-text:           $state-danger-text !default;
+// $alert-danger-border:         $state-danger-border !default;
+$alert-success-bg:            transparent !default;
+$alert-success-text:          $text-color !default;
+$alert-success-border:        #95C11F !default;
+
 
 
 // Progress bars

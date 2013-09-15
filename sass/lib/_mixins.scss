@@ -362,6 +362,7 @@
   background-color: $background;
   border-color: $border;
   color: $text-color;
+  
   hr {
     border-top-color: darken($border, 5%);
   }
@@ -413,7 +414,7 @@
   &:active,
   &.active {
     color: $color;
-    background-color: darken($background, 8%);
+    background-color: lighten($background, 10%);
         border-color: darken($border, 12%);
   }
   .open & { &.dropdown-toggle {
