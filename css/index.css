@@ -9249,12 +9249,7 @@ label .info {
   color: #000;
 }
 
-/* line 441, ../sass/index.scss */
-.order-layout-1 {
-  display: none;
-}
-
-/* line 445, ../sass/index.scss */
+/* line 448, ../sass/index.scss */
 .special-offer {
   background-color: #fff;
   background-image: url(../img/wcbiz.p-app.ru/special-offer.png);
@@ -9262,7 +9257,7 @@ label .info {
   background-position: left top;
   height: 101px;
 }
-/* line 449, ../sass/index.scss */
+/* line 452, ../sass/index.scss */
 .special-offer .offer-box {
   float: left;
   width: 125px;

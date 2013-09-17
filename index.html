@@ -135,102 +135,139 @@
               </ol>
             </div>
             <!-- /.breadcrumb -->
-            <div class="order-layot-2">
+            
+            <div class="order-layout-2">
               <!-- Описание заявки -->
               <div class="order-layout-2-1">
-              <div class="row">
-                <div class="col-sm-4">
-                  Заявка на обмен:<br />
-                  Номер заявки:<br />
-                  Сумма обмена:<br />
-                  Сумма с учетом комиссии:<br />
-                  Кошелек получателя:<br />
-                  Личные данные:<br />
-                  Комментарий к заявке:<br />
+                <div class="row">
+                  <div class="col-sm-4">
+                    Заявка на обмен:<br />
+                    Номер заявки:<br />
+                    Сумма обмена:<br />
+                    Сумма с учетом комиссии:<br />
+                    Кошелек получателя:<br />
+                    Личные данные:<br />
+                    Комментарий к заявке:<br />
+                  </div>
+                  <div class="col-sm-8">
+                    Liberty Reserve USD на Perfect Money USD<br />
+                    123<br />
+                    100 USD<br />
+                    98 USD<br />
+                    U1234567<br />
+                    Иванов Иван<br />
+                    В случаи неправильного заполнения формы, свяжитесь со мной по такому то телефону.
+                  </div>
+                </div><!-- <div class="row"> -->
+                <!-- /.Описание заявки -->
+                <!-- Предупреждение -->
+                <div class="row">
+                  <div class="alert alert-warning">Пожалуйста, будьте внимательны, при оформлении заявки.</div>
+                </div>  
+                <!-- /.Предупреждение -->
+                <!-- Изменить/ Подтвердить -->
+                <div class="row">
+                  <div class="form-group">
+                    <button type="button" class="btn btn-danger btn-md pull-left">Изменить</button>
+                    <button type="button" class="btn btn-success btn-md pull-right">Подтвердить</button>          
+                    <div class="clearfix"></div>
+                  </div>                
                 </div>
-                <div class="col-sm-8">
-                  Liberty Reserve USD на Perfect Money USD<br />
-                  123<br />
-                  100 USD<br />
-                  98 USD<br />
-                  U1234567<br />
-                  Иванов Иван<br />
-                  В случаи неправильного заполнения формы, свяжитесь со мной по такому то телефону.
+                <!-- /.Изменить/ Подтвердить -->
+              </div><!-- <div class="order-layout-2-1"> -->
+              <!-- Ваша заявка успешно отправлена -->
+              <div class="order-layout-2-2">
+                <div class="row">
+                  <!-- success sign -->
+                  <div class="col-sm-2">
+                    <img src="img/wcbiz.p-app.ru/success-sign.png" alt="">
+                  </div>
+                  <!-- /.success sign -->
+                  <!-- success message -->
+                  <div class="col-sm-10">
+                    <p>Ваша заявка №123, успешно создана!</p>
+                    <p>Вам на почту или телефон, будут приходить уведомления о статусе вашей заявки.</p>
+
+                    <p>Если у Вас возник вопрос, посмотрите на страницу <a href="">«Часто задаваемые вопросы»</a> или <a href="">свяжитесь с нами</a>, через любой удобный для Вас способ. </p>
+
+                    <p><strong>Спасибо, что Вы выбрали наш сервис.</strong></p>
+                  </div>
+                  <!-- /.success message -->
                 </div>
-              </div><!-- <div class="row"> -->
-              <!-- /.Описание заявки -->
-              <!-- Предупреждение -->
-              <div class="row">
-                <div class="alert alert-warning">Пожалуйста, будьте внимательны, при оформлении заявки.</div>
+                <!-- main page link + social -->
+                <div class="row">
+                  <div class="col-sm-6">
+                    <div class="form-group">
+                      <button type="button" class="btn btn-info btn-md pull-left">На главную</button>
+                    </div>
+                  </div>
+
+                  <div class="col-sm-6 text-right">
+                    <div class="form-group" style="display: inline-block;">
+                      <div class="btn-group">
+                        <button type="button" class="btn btn-default btn-md btn-success collapsed" data-toggle="collapse" data-target="#social-toggle">Поделиться</button>
+                        <button class="btn btn-default btn-success btn-dropdown-icon collapsed" data-toggle="collapse" data-target="#social-toggle"><span class="caret"></span></button>
+                        </div>
+                        
+                        <div id="social-toggle" class="social-dropdown-toggle collapse out">
+                          <a class="social tw" href="https://twitter.com/web_capital" title="twitter" target="_blank"></a>
+                          <a class="social fb" href="https://ru-ru.facebook.com/pages/WEB-CAPITALRU/131969930225573" title="facebook" target="_blank"></a>
+                          <a class="social vk" href="http://vk.com/webcapital" title="vkontakte" target="_blank"></a>
+                        </div>
+                    </div>
+                  </div>                 
+                </div><!-- <div class="row"> -->
+                <!-- /.main page link + social -->
+                <!-- special-offer -->
+                <div class="row special-offer">
+                  <div class="offer-box"></div>
+                  <div class="offer-box"></div>
+                  <div class="offer-box"></div>
+                  <div class="offer-box"></div>
+                  <div class="clearfix"></div>
+                </div>
+                <!-- /.special-offer -->
               </div>
-              <!-- /.Предупреждение -->
-              <!-- Изменить/ Подтвердить -->
+              <!-- /.Ваша заявка успешно отправлена -->
+              <!-- Информация о банке -->
+              <!-- !!!! добавить общий div "Заполнение формы" -->
+            </div><!-- <div class="order-layout-2"> -->
+            
+            <div class="order-layout-3">
+              <div class="row">
+                <p>Инструкции по переводу: </p>
+                <ol>
+                  
+
+                  <li>Для перевода у Вас должна быть подключена услуга "Сбербанк Онлайн". Зайдите в интернет банк <a href="">здесь</a> и переведите 1000 рублей на следующие реквизиты:
+
+                  <p><strong>Наименование получателя:</strong><br />
+                  ЕЛЕНА ВЛАДИМИРОВНА О.
+                  </p>
+                  <p><strong>Номер карты получателя:</strong><br />
+                  639002429006378529</p>
+                  <p>
+                  <strong>Сумма платежа:</strong><br />
+                  1000.48  руб. (платите с точностью до копеек)</p>
+
+                  <p><strong>Комментарий получателю:</strong><br>
+                  Частный перевод </p>
+                  </li>
+                  <li>Только после того как отправите деньги на указанные выше реквизиты и с вашего счета спишется эта сумма нажмите кнопку "Уведомить об оплате" и введите данные платежа.</li>
+                </ol>
+              </div>  
+              <div class="row">
+                <div class="alert alert-warning">Если после платежа не нажмете кнопку «уведомления о платеже», Ваша заявка так и не начнет обрабатываться.</div>
+              </div>
               <div class="row">
                 <div class="form-group">
-                  <button type="button" class="btn btn-danger btn-md pull-left">Изменить</button>
-                  <button type="button" class="btn btn-success btn-md pull-right">Подтвердить</button>          
+                  <button type="button" class="btn btn-danger btn-md pull-left">Изменить заявку</button>
+                  <button type="button" class="btn btn-success btn-md pull-right">Я отправил</button>          
                   <div class="clearfix"></div>
                 </div>                
-              </div>
-              <!-- /.Изменить/ Подтвердить -->
-            </div><!-- <div class="order-layout-2-1"> -->
-            <!-- Ваша заявка успешно отправлена -->
-            <div class="order-layout-2-2">
-              <div class="row">
-                <!-- success sign -->
-                <div class="col-sm-2">
-                  <img src="img/wcbiz.p-app.ru/success-sign.png" alt="">
-                </div>
-                <!-- /.success sign -->
-                <!-- success message -->
-                <div class="col-sm-10">
-                  <p>Ваша заявка №123, успешно создана!</p>
-                  <p>Вам на почту или телефон, будут приходить уведомления о статусе вашей заявки.</p>
+              </div>              
+            </div><!-- <div class="order-layout-3"> -->
 
-                  <p>Если у Вас возник вопрос, посмотрите на страницу <a href="">«Часто задаваемые вопросы»</a> или <a href="">свяжитесь с нами</a>, через любой удобный для Вас способ. </p>
-
-                  <p><strong>Спасибо, что Вы выбрали наш сервис.</strong></p>
-                </div>
-                <!-- /.success message -->
-              </div>
-              <!-- main page link + social -->
-              <div class="row">
-                <div class="col-sm-6">
-                  <div class="form-group">
-                    <button type="button" class="btn btn-info btn-md pull-left">На главную</button>
-                  </div>
-                </div>
-
-                <div class="col-sm-6 text-right">
-                  <div class="form-group" style="display: inline-block;">
-                    <div class="btn-group">
-                      <button type="button" class="btn btn-default btn-md btn-success collapsed" data-toggle="collapse" data-target="#social-toggle">Поделиться</button>
-                      <button class="btn btn-default btn-success btn-dropdown-icon collapsed" data-toggle="collapse" data-target="#social-toggle"><span class="caret"></span></button>
-                      </div>
-                      
-                      <div id="social-toggle" class="social-dropdown-toggle collapse out">
-                        <a class="social tw" href="https://twitter.com/web_capital" title="twitter" target="_blank"></a>
-                        <a class="social fb" href="https://ru-ru.facebook.com/pages/WEB-CAPITALRU/131969930225573" title="facebook" target="_blank"></a>
-                        <a class="social vk" href="http://vk.com/webcapital" title="vkontakte" target="_blank"></a>
-                      </div>
-                  </div>
-                </div>                 
-              </div><!-- <div class="row"> -->
-              <!-- /.main page link + social -->
-              <!-- special-offer -->
-              <div class="row special-offer">
-                <div class="offer-box"></div>
-                <div class="offer-box"></div>
-                <div class="offer-box"></div>
-                <div class="offer-box"></div>
-                <div class="clearfix"></div>
-              </div>
-              <!-- /.special-offer -->
-            </div>
-            <!-- /.Ваша заявка успешно отправлена -->
-            <!-- Информация о банке -->
-            <!-- !!!! добавить общий div "Заполнение формы" -->
-            </div>
             <div class="order-layout-1">
               <div class="X-Y-5-0 row">
                 <h4>Информация о банке</h4>
