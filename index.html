@@ -75,55 +75,57 @@
           <div class="col-sm-8 form-layout">
             <!-- Выбор откуда/куда сервис -->
             <!-- "-" Popup "Выберите электронную в" -->
-            <div id="exchange-main" class="row block">
-              <div class="col-sm-6">
-              <div class="btn-group">
-                
-                <button type="button" class="btn btn-info">Выбрать электронную валюту</button>
-                <button type="button" class="btn btn-info collapsed dropdown-toggle" data-toggle="dropdown">
-                  <span class="caret"></span>
-                </button>
-                <ul class="dropdown-menu" role="menu">
-                  <li><a href="#">Action</a></li>
-                  <li><a href="#">Another action</a></li>
-                  <li><a href="#">Something else here</a></li>
+            <div class="order-layout-1">
+              <div id="exchange-main" class="row block">
+                <div class="col-sm-6">
+                <div class="btn-group">
                   
-                  <li><a href="#">Separated link</a></li>
-                </ul>
-              </div>
-              </div>
-              <div class="btn-group pull-right">
-                <button type="button" class="btn btn-danger">Action</button>
-                <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown">
-                  <span class="caret"></span>
-                </button>
-                <ul class="dropdown-menu" role="menu">
-                  <li><a href="#">Action</a></li>
-                  <li><a href="#">Another action</a></li>
-                  <li><a href="#">Something else here</a></li>
-                  <li class="divider"></li>
-                  <li><a href="#">Separated link</a></li>
-                </ul>
-              </div>
-            </div>        
-            <!-- X-Y-1-0 -->
-            <!-- Ввод обрабатываемой суммы  -->
-            <!-- Сумма с учетом коммиссии  -->
-            <!-- "-" Подсказка о приемуществах другого ввода  -->
-            <div class="X-Y-1-0 row">
-              <!-- Отдаете -->
-              <div class="form-group pull-left">
-                <label for="X-Y-1-0-input-1" class="header">Отдаете</label>
-                <input type="text" class="form-control" name="X-Y-1-0-input-1" id="X-Y-1-0-input-1" placeholder="Enter email">
-              </div>  
-              <!-- Сумма с учетемо коммисии -->
-              <div class="form-group pull-right">
-                <label for="X-Y-1-0-input-2" class="header">Сумма с учетемо коммисии</label>
-                <input type="text" class="form-control" id="X-Y-1-0-input-2" placeholder="Enter email" value="90" disabled>
-              </div>
+                  <button type="button" class="btn btn-info">Выбрать электронную валюту</button>
+                  <button type="button" class="btn btn-info collapsed dropdown-toggle" data-toggle="dropdown">
+                    <span class="caret"></span>
+                  </button>
+                  <ul class="dropdown-menu" role="menu">
+                    <li><a href="#">Action</a></li>
+                    <li><a href="#">Another action</a></li>
+                    <li><a href="#">Something else here</a></li>
+                    
+                    <li><a href="#">Separated link</a></li>
+                  </ul>
+                </div>
+                </div>
+                <div class="btn-group pull-right">
+                  <button type="button" class="btn btn-danger">Action</button>
+                  <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown">
+                    <span class="caret"></span>
+                  </button>
+                  <ul class="dropdown-menu" role="menu">
+                    <li><a href="#">Action</a></li>
+                    <li><a href="#">Another action</a></li>
+                    <li><a href="#">Something else here</a></li>
+                    <li class="divider"></li>
+                    <li><a href="#">Separated link</a></li>
+                  </ul>
+                </div>
+              </div>        
+              <!-- X-Y-1-0 -->
+              <!-- Ввод обрабатываемой суммы  -->
+              <!-- Сумма с учетом коммиссии  -->
+              <!-- "-" Подсказка о приемуществах другого ввода  -->
+              <div class="X-Y-1-0 row">
+                <!-- Отдаете -->
+                <div class="form-group pull-left">
+                  <label for="X-Y-1-0-input-1" class="header">Отдаете</label>
+                  <input type="text" class="form-control" name="X-Y-1-0-input-1" id="X-Y-1-0-input-1" placeholder="Enter email">
+                </div>  
+                <!-- Сумма с учетемо коммисии -->
+                <div class="form-group pull-right">
+                  <label for="X-Y-1-0-input-2" class="header">Сумма с учетемо коммисии</label>
+                  <input type="text" class="form-control" id="X-Y-1-0-input-2" placeholder="Enter email" value="90" disabled>
+                </div>
 
-              <button class="btn btn-defualt btn-block btn-success">Продолжить</button>
-            </div>
+                <button class="btn btn-defualt btn-block btn-success">Продолжить</button>
+              </div>
+            </div><!-- <div class="order-layout-1"> -->
             <!-- breadcrumb -->
             <div class="X-Y-2-0 row">
               <ol class="breadcrumb">
@@ -133,119 +135,215 @@
               </ol>
             </div>
             <!-- /.breadcrumb -->
-            <!-- Информация о банке -->
-            <div class="X-Y-5-0 row">
-              <h4>Информация о банке</h4>
+            <div class="order-layot-2">
+              <!-- Описание заявки -->
+              <div class="order-layout-2-1">
               <div class="row">
-                <div class="col-sm-7">
-                 <div class="btn-group">
-                  <button type="button" class="btn btn-info collapsed search-bank" data-toggle="collapse" data-target="#search-collapse-box">Выберите наименование банка</button>
-                  <button class="btn btn-info collapsed mini" data-toggle="collapse" data-target="#search-collapse-box">
-                    <span class="caret"></span>
-                  </button>
-                  
-                  <div class="clearfix"></div>
-      
-                  <div id="search-collapse-box" class="collapse out">
-                    <div class="form-group">
-                      <div class="input-group">
-                        <input type="text" class="form-control" id="search-bank" placeholder="Поиск...">
-                        <span class="input-group-btn">
-                          <button class="btn btn-custom search-icon" type="button">
-                            <span class="glyphicon glyphicon-search"></span>
-                          </button>
-                        </span>
-                      </div><!-- /input-group -->  
-                    </div>
-                  </div><!-- <div id="search-collapse-box" class="collapse out"> -->
-                  </div>
-                </div> <!-- <div class="inline-form">             -->
-                <div class="span-sm-5">
-                  <div class="form-group pull-right">
-                    <label for="X-Y-2-0-input-2">БИК банка<span class="info">*</span></label>
-                    <input type="text" class="form-control btn-md" name="X-Y-2-0-input-2" id="X-Y-2-0-input-2" placeholder="123456789">
-                  </div>
-                </div>
-              </div>
-              <!-- Номер банковской карты + Номер расчетного счета -->
-              <div class="row">
-                <!-- Номер банковской карты -->
                 <div class="col-sm-4">
-                  <div class="form-group">
-                    <label for="X-Y-2-0-input-2">Номер банковской карты<span class="info">*</span></label>
-                    <input type="text" class="form-control btn-md" name="X-Y-2-0-input-2" id="X-Y-2-0-input-2" placeholder="123456789">
-                  </div>
+                  Заявка на обмен:<br />
+                  Номер заявки:<br />
+                  Сумма обмена:<br />
+                  Сумма с учетом комиссии:<br />
+                  Кошелек получателя:<br />
+                  Личные данные:<br />
+                  Комментарий к заявке:<br />
                 </div>
-                <!-- /.Номер банковской карты -->
-                <!-- Номер расчетного счета -->
-                <div class="col-sm-5">
-                  <div class="form-group">
-                    <label for="X-Y-2-0-input-2">Номер расчетного счета<span class="info">*</span></label>
-                    <input type="text" class="form-control btn-md" name="X-Y-2-0-input-2" id="X-Y-2-0-input-2" placeholder="123456789">
-                  </div>
+                <div class="col-sm-8">
+                  Liberty Reserve USD на Perfect Money USD<br />
+                  123<br />
+                  100 USD<br />
+                  98 USD<br />
+                  U1234567<br />
+                  Иванов Иван<br />
+                  В случаи неправильного заполнения формы, свяжитесь со мной по такому то телефону.
                 </div>
-                <!-- /.Номер расчетного счета -->
+              </div><!-- <div class="row"> -->
+              <!-- /.Описание заявки -->
+              <!-- Предупреждение -->
+              <div class="row">
+                <div class="alert alert-warning">Пожалуйста, будьте внимательны, при оформлении заявки.</div>
               </div>
-              <!-- /.Номер банковской карты + Номер расчетного счета -->
-            </div><!-- <div class="X-Y-5-0 row"> -->
+              <!-- /.Предупреждение -->
+              <!-- Изменить/ Подтвердить -->
+              <div class="row">
+                <div class="form-group">
+                  <button type="button" class="btn btn-danger btn-md pull-left">Изменить</button>
+                  <button type="button" class="btn btn-success btn-md pull-right">Подтвердить</button>          
+                  <div class="clearfix"></div>
+                </div>                
+              </div>
+              <!-- /.Изменить/ Подтвердить -->
+            </div><!-- <div class="order-layout-2-1"> -->
+            <!-- Ваша заявка успешно отправлена -->
+            <div class="order-layout-2-2">
+              <div class="row">
+                <!-- success sign -->
+                <div class="col-sm-2">
+                  <img src="img/wcbiz.p-app.ru/success-sign.png" alt="">
+                </div>
+                <!-- /.success sign -->
+                <!-- success message -->
+                <div class="col-sm-10">
+                  <p>Ваша заявка №123, успешно создана!</p>
+                  <p>Вам на почту или телефон, будут приходить уведомления о статусе вашей заявки.</p>
+
+                  <p>Если у Вас возник вопрос, посмотрите на страницу <a href="">«Часто задаваемые вопросы»</a> или <a href="">свяжитесь с нами</a>, через любой удобный для Вас способ. </p>
+
+                  <p><strong>Спасибо, что Вы выбрали наш сервис.</strong></p>
+                </div>
+                <!-- /.success message -->
+              </div>
+              <!-- main page link + social -->
+              <div class="row">
+                <div class="col-sm-6">
+                  <div class="form-group">
+                    <button type="button" class="btn btn-info btn-md pull-left">На главную</button>
+                  </div>
+                </div>
+
+                <div class="col-sm-6 text-right">
+                  <div class="form-group" style="display: inline-block;">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-default btn-md btn-success collapsed" data-toggle="collapse" data-target="#social-toggle">Поделиться</button>
+                      <button class="btn btn-default btn-success btn-dropdown-icon collapsed" data-toggle="collapse" data-target="#social-toggle"><span class="caret"></span></button>
+                      </div>
+                      
+                      <div id="social-toggle" class="social-dropdown-toggle collapse out">
+                        <a class="social tw" href="https://twitter.com/web_capital" title="twitter" target="_blank"></a>
+                        <a class="social fb" href="https://ru-ru.facebook.com/pages/WEB-CAPITALRU/131969930225573" title="facebook" target="_blank"></a>
+                        <a class="social vk" href="http://vk.com/webcapital" title="vkontakte" target="_blank"></a>
+                      </div>
+                  </div>
+                </div>                 
+              </div><!-- <div class="row"> -->
+              <!-- /.main page link + social -->
+              <!-- special-offer -->
+              <div class="row special-offer">
+                <div class="offer-box"></div>
+                <div class="offer-box"></div>
+                <div class="offer-box"></div>
+                <div class="offer-box"></div>
+                <div class="clearfix"></div>
+              </div>
+              <!-- /.special-offer -->
+            </div>
+            <!-- /.Ваша заявка успешно отправлена -->
+            <!-- Информация о банке -->
+            <!-- !!!! добавить общий div "Заполнение формы" -->
+            </div>
+            <div class="order-layout-1">
+              <div class="X-Y-5-0 row">
+                <h4>Информация о банке</h4>
+                <div class="row">
+                  <div class="col-sm-7">
+                   <div class="btn-group">
+                    <button type="button" class="btn btn-info collapsed search-bank" data-toggle="collapse" data-target="#search-collapse-box">Выберите наименование банка</button>
+                    <button class="btn btn-info collapsed mini" data-toggle="collapse" data-target="#search-collapse-box">
+                      <span class="caret"></span>
+                    </button>
+                    
+                    <div class="clearfix"></div>
+        
+                    <div id="search-collapse-box" class="collapse out">
+                      <div class="form-group">
+                        <div class="input-group">
+                          <input type="text" class="form-control" id="search-bank" placeholder="Поиск...">
+                          <span class="input-group-btn">
+                            <button class="btn btn-custom search-icon" type="button">
+                              <span class="glyphicon glyphicon-search"></span>
+                            </button>
+                          </span>
+                        </div><!-- /input-group -->  
+                      </div>
+                    </div><!-- <div id="search-collapse-box" class="collapse out"> -->
+                    </div>
+                  </div> <!-- <div class="inline-form">             -->
+                  <div class="span-sm-5">
+                    <div class="form-group pull-right">
+                      <label for="X-Y-2-0-input-2">БИК банка<span class="info">*</span></label>
+                      <input type="text" class="form-control btn-md" name="X-Y-2-0-input-2" id="X-Y-2-0-input-2" placeholder="123456789">
+                    </div>
+                  </div>
+                </div>
+                <!-- Номер банковской карты + Номер расчетного счета -->
+                <div class="row">
+                  <!-- Номер банковской карты -->
+                  <div class="col-sm-4">
+                    <div class="form-group">
+                      <label for="X-Y-2-0-input-2">Номер банковской карты<span class="info">*</span></label>
+                      <input type="text" class="form-control btn-md" name="X-Y-2-0-input-2" id="X-Y-2-0-input-2" placeholder="123456789">
+                    </div>
+                  </div>
+                  <!-- /.Номер банковской карты -->
+                  <!-- Номер расчетного счета -->
+                  <div class="col-sm-5">
+                    <div class="form-group">
+                      <label for="X-Y-2-0-input-2">Номер расчетного счета<span class="info">*</span></label>
+                      <input type="text" class="form-control btn-md" name="X-Y-2-0-input-2" id="X-Y-2-0-input-2" placeholder="123456789">
+                    </div>
+                  </div>
+                  <!-- /.Номер расчетного счета -->
+                </div>
+                <!-- /.Номер банковской карты + Номер расчетного счета -->
+              </div><!-- <div class="X-Y-5-0 row"> -->
 
             <!-- /.Информация о банке -->
             <!-- Данные кошельков -->
-            <div class="X-Y-2-0 row">
-              <h4>Данные кошельков</h4>
-              <!-- Аккаунт отправителя -->
-              <div class="form-group pull-left">
-                <label for="X-Y-2-0-input-1">Аккаунт отправителя<span class="info">*</span></label>
-                <input type="text" class="form-control" name="X-Y-2-0-input-1" id="X-Y-2-0-input-1" placeholder="1234567">
-              </div>  
-              <!-- Аккаунт получателя -->
-              <div class="form-group pull-right">
-                <label for="X-Y-2-0-input-2">Аккаунт получателя<span class="info">*</span></label>
-                <input type="text" class="form-control" name="X-Y-2-0-input-2" id="X-Y-2-0-input-2" placeholder="1234567">
-              </div>
-            </div>
-            <!-- /.Данные кошельков -->
-
-            <!-- Личные Данные + Контактные данне + Комментарии -->
-            <!-- Оформить заказ -->
-            <div class="X-Y-2-0 row">
-              <!-- Личные Данные -->
-              <h4>Личные Данные</h4>
-              <!-- ФИО -->
-              <div class="form-group">
-                <label for="X-Y-2-0-input-3">ФИО<span class="info">*</span></label>
-                <input type="text" class="form-control" name="X-Y-2-0-input-3" id="X-Y-2-0-input-3" placeholder="Иванов Иван Иванович">
-              </div>
-            <!-- /.Личные Данные -->
-            
-            <!-- Контактные данные -->
-              <h4>Контактные данные</h4>
-              <!-- Электронная почта -->
-              <div class="form-group pull-left">
-                <label for="X-Y-2-0-input-4">Электронная почта<span class="info">*</span></label>
-                <input type="text" class="form-control" name="X-Y-2-0-input-4" id="X-Y-2-0-input-4" placeholder="example@gmail.com">
-              </div>  
-              <!-- Телефон -->
-              <div class="form-group pull-right">
-                <label for="X-Y-2-0-input-5">Телефон</label>
-                <input type="text" class="form-control" name="X-Y-2-0-input-5" id="X-Y-2-0-input-5" placeholder="8 926 081622">
-              </div>
-              <!-- /.Контактные данные -->
-
-              <!-- Комментрарии + Соглашение + Оформить заказ -->
-              <div class="form-group">
-                <textarea class="form-control" name="X-Y-2-0-area-0" id="X-Y-2-0-area-0" rows="3" placeholder="Вы можете оставить комментарий к вашей заявке"></textarea>              
-                <div class="checkbox">
-                  <label>
-                    <input type="checkbox" value="">
-                    Я согласен с <a href="">пользовательским соглашением</a> сервиса
-                  </label>
+              <div class="X-Y-2-0 row">
+                <h4>Данные кошельков</h4>
+                <!-- Аккаунт отправителя -->
+                <div class="form-group pull-left">
+                  <label for="X-Y-2-0-input-1">Аккаунт отправителя<span class="info">*</span></label>
+                  <input type="text" class="form-control" name="X-Y-2-0-input-1" id="X-Y-2-0-input-1" placeholder="1234567">
+                </div>  
+                <!-- Аккаунт получателя -->
+                <div class="form-group pull-right">
+                  <label for="X-Y-2-0-input-2">Аккаунт получателя<span class="info">*</span></label>
+                  <input type="text" class="form-control" name="X-Y-2-0-input-2" id="X-Y-2-0-input-2" placeholder="1234567">
                 </div>
-                <button class="btn btn-defualt btn-block btn-success">Оформить заявку</button>
               </div>
-              <!-- /.Комментрарии + Соглашение + Оформить заказ -->
-            </div><!-- /. <div class="X-Y-2-0 row"> -->
+              <!-- /.Данные кошельков -->
+
+              <!-- Личные Данные + Контактные данне + Комментарии -->
+              <!-- Оформить заказ -->
+              <div class="X-Y-2-0 row">
+                <!-- Личные Данные -->
+                <h4>Личные Данные</h4>
+                <!-- ФИО -->
+                <div class="form-group">
+                  <label for="X-Y-2-0-input-3">ФИО<span class="info">*</span></label>
+                  <input type="text" class="form-control" name="X-Y-2-0-input-3" id="X-Y-2-0-input-3" placeholder="Иванов Иван Иванович">
+                </div>
+                <!-- /.Личные Данные -->
             
+                <!-- Контактные данные -->
+                <h4>Контактные данные</h4>
+                <!-- Электронная почта -->
+                <div class="form-group pull-left">
+                  <label for="X-Y-2-0-input-4">Электронная почта<span class="info">*</span></label>
+                  <input type="text" class="form-control" name="X-Y-2-0-input-4" id="X-Y-2-0-input-4" placeholder="example@gmail.com">
+                </div>  
+                <!-- Телефон -->
+                <div class="form-group pull-right">
+                  <label for="X-Y-2-0-input-5">Телефон</label>
+                  <input type="text" class="form-control" name="X-Y-2-0-input-5" id="X-Y-2-0-input-5" placeholder="8 926 081622">
+                </div>
+                <!-- /.Контактные данные -->
+
+                <!-- Комментрарии + Соглашение + Оформить заказ -->
+                <div class="form-group">
+                  <textarea class="form-control" name="X-Y-2-0-area-0" id="X-Y-2-0-area-0" rows="3" placeholder="Вы можете оставить комментарий к вашей заявке"></textarea>              
+                  <div class="checkbox">
+                    <label>
+                      <input type="checkbox" value="">
+                      Я согласен с <a href="">пользовательским соглашением</a> сервиса
+                    </label>
+                  </div>
+                  <button class="btn btn-defualt btn-block btn-success">Оформить заявку</button>
+                </div>
+                <!-- /.Комментрарии + Соглашение + Оформить заказ -->
+              </div><!-- /. <div class="X-Y-2-0 row"> -->
+            </div><!-- <div class="order-layout-1"> -->
           </div><!-- /.<div class="col-sm-8 form-layout"> -->
           
           <div id="helper" class="col-sm-3 col-sm-offset-1">
