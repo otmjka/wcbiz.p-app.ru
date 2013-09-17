@@ -52,9 +52,9 @@
 
 .btn {
   display: inline-block;
-  padding: $padding-base-vertical $padding-base-horizontal;
+  padding: 6px 12px;
   margin-bottom: 0; // For input.btn
-  font-size: $font-size-base;
+  font-size: 14px;
   font-weight: $btn-font-weight;
   line-height: $line-height-base;
   text-align: center;
@@ -195,7 +195,9 @@
 .btn-md{
   width: 144px;
 }
-.btn-sm,
+.btn-sm{
+  width: 45px;
+}
 .btn-xs {
   // line-height: ensure proper height of button next to small input
   @include button-size($padding-small-vertical, $padding-small-horizontal, $font-size-small, $line-height-small, $border-radius-small);

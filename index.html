@@ -70,24 +70,27 @@
       <div class="row">
         <!-- content -->
         <!-- left sidebar -->
-        <div id="content" class="col-sm-9">
+        <div id="content" class="col-sm-10">
           <div class="row">
-          <div class="col-sm-9 form-layout">
+          <div class="col-sm-8 form-layout">
             <!-- Выбор откуда/куда сервис -->
+            <!-- "-" Popup "Выберите электронную в" -->
             <div id="exchange-main" class="row block">
-              
+              <div class="col-sm-6">
               <div class="btn-group">
-                <button type="button" class="btn btn-danger">Action</button>
-                <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown">
+                
+                <button type="button" class="btn btn-info">Выбрать электронную валюту</button>
+                <button type="button" class="btn btn-info collapsed dropdown-toggle" data-toggle="dropdown">
                   <span class="caret"></span>
                 </button>
                 <ul class="dropdown-menu" role="menu">
                   <li><a href="#">Action</a></li>
                   <li><a href="#">Another action</a></li>
                   <li><a href="#">Something else here</a></li>
-                  <li class="divider"></li>
+                  
                   <li><a href="#">Separated link</a></li>
                 </ul>
+              </div>
               </div>
               <div class="btn-group pull-right">
                 <button type="button" class="btn btn-danger">Action</button>
@@ -103,47 +106,164 @@
                 </ul>
               </div>
             </div>        
-            <!-- placeholder -->
-            <div class="row">
-            <div class="form-group pull-left">
-              <label for="input1" class="header">Отдаете</label>
-              <input type="text" class="form-control" id="input1" placeholder="Enter email">
+            <!-- X-Y-1-0 -->
+            <!-- Ввод обрабатываемой суммы  -->
+            <!-- Сумма с учетом коммиссии  -->
+            <!-- "-" Подсказка о приемуществах другого ввода  -->
+            <div class="X-Y-1-0 row">
+              <!-- Отдаете -->
+              <div class="form-group pull-left">
+                <label for="X-Y-1-0-input-1" class="header">Отдаете</label>
+                <input type="text" class="form-control" name="X-Y-1-0-input-1" id="X-Y-1-0-input-1" placeholder="Enter email">
+              </div>  
+              <!-- Сумма с учетемо коммисии -->
+              <div class="form-group pull-right">
+                <label for="X-Y-1-0-input-2" class="header">Сумма с учетемо коммисии</label>
+                <input type="text" class="form-control" id="X-Y-1-0-input-2" placeholder="Enter email" value="90" disabled>
+              </div>
+
+              <button class="btn btn-defualt btn-block btn-success">Продолжить</button>
             </div>
-            <!-- focus -->
+            <!-- breadcrumb -->
+            <div class="X-Y-2-0 row">
+              <ol class="breadcrumb">
+                <li><a href="#">Заполнение формы</a></li>
+                <li><a href="#">Подтверждение заявки</a></li>
+                <li class="active">Перевод средств</li>
+              </ol>
+            </div>
+            <!-- /.breadcrumb -->
+            <!-- Информация о банке -->
+            <div class="X-Y-5-0 row">
+              <h4>Информация о банке</h4>
+              <div class="row">
+                <div class="col-sm-7">
+                 <div class="btn-group">
+                  <button type="button" class="btn btn-info collapsed search-bank" data-toggle="collapse" data-target="#search-collapse-box">Выберите наименование банка</button>
+                  <button class="btn btn-info collapsed mini" data-toggle="collapse" data-target="#search-collapse-box">
+                    <span class="caret"></span>
+                  </button>
+                  
+                  <div class="clearfix"></div>
+      
+                  <div id="search-collapse-box" class="collapse out">
+                    <div class="form-group">
+                      <div class="input-group">
+                        <input type="text" class="form-control" id="search-bank" placeholder="Поиск...">
+                        <span class="input-group-btn">
+                          <button class="btn btn-custom search-icon" type="button">
+                            <span class="glyphicon glyphicon-search"></span>
+                          </button>
+                        </span>
+                      </div><!-- /input-group -->  
+                    </div>
+                  </div><!-- <div id="search-collapse-box" class="collapse out"> -->
+                  </div>
+                </div> <!-- <div class="inline-form">             -->
+                <div class="span-sm-5">
+                  <div class="form-group pull-right">
+                    <label for="X-Y-2-0-input-2">БИК банка<span class="info">*</span></label>
+                    <input type="text" class="form-control btn-md" name="X-Y-2-0-input-2" id="X-Y-2-0-input-2" placeholder="123456789">
+                  </div>
+                </div>
+              </div>
+              <!-- Номер банковской карты + Номер расчетного счета -->
+              <div class="row">
+                <!-- Номер банковской карты -->
+                <div class="col-sm-4">
+                  <div class="form-group">
+                    <label for="X-Y-2-0-input-2">Номер банковской карты<span class="info">*</span></label>
+                    <input type="text" class="form-control btn-md" name="X-Y-2-0-input-2" id="X-Y-2-0-input-2" placeholder="123456789">
+                  </div>
+                </div>
+                <!-- /.Номер банковской карты -->
+                <!-- Номер расчетного счета -->
+                <div class="col-sm-5">
+                  <div class="form-group">
+                    <label for="X-Y-2-0-input-2">Номер расчетного счета<span class="info">*</span></label>
+                    <input type="text" class="form-control btn-md" name="X-Y-2-0-input-2" id="X-Y-2-0-input-2" placeholder="123456789">
+                  </div>
+                </div>
+                <!-- /.Номер расчетного счета -->
+              </div>
+              <!-- /.Номер банковской карты + Номер расчетного счета -->
+            </div><!-- <div class="X-Y-5-0 row"> -->
+
+            <!-- /.Информация о банке -->
+            <!-- Данные кошельков -->
+            <div class="X-Y-2-0 row">
+              <h4>Данные кошельков</h4>
+              <!-- Аккаунт отправителя -->
+              <div class="form-group pull-left">
+                <label for="X-Y-2-0-input-1">Аккаунт отправителя<span class="info">*</span></label>
+                <input type="text" class="form-control" name="X-Y-2-0-input-1" id="X-Y-2-0-input-1" placeholder="1234567">
+              </div>  
+              <!-- Аккаунт получателя -->
+              <div class="form-group pull-right">
+                <label for="X-Y-2-0-input-2">Аккаунт получателя<span class="info">*</span></label>
+                <input type="text" class="form-control" name="X-Y-2-0-input-2" id="X-Y-2-0-input-2" placeholder="1234567">
+              </div>
+            </div>
+            <!-- /.Данные кошельков -->
+
+            <!-- Личные Данные + Контактные данне + Комментарии -->
+            <!-- Оформить заказ -->
+            <div class="X-Y-2-0 row">
+              <!-- Личные Данные -->
+              <h4>Личные Данные</h4>
+              <!-- ФИО -->
+              <div class="form-group">
+                <label for="X-Y-2-0-input-3">ФИО<span class="info">*</span></label>
+                <input type="text" class="form-control" name="X-Y-2-0-input-3" id="X-Y-2-0-input-3" placeholder="Иванов Иван Иванович">
+              </div>
+            <!-- /.Личные Данные -->
             
-            <div class="form-group pull-right">
-              <label for="input2">Сумма с учетемо коммисии</label>
-              <input type="text" class="form-control" id="input2" placeholder="Enter email" value="value without focus">
-            </div>
-            </div>
+            <!-- Контактные данные -->
+              <h4>Контактные данные</h4>
+              <!-- Электронная почта -->
+              <div class="form-group pull-left">
+                <label for="X-Y-2-0-input-4">Электронная почта<span class="info">*</span></label>
+                <input type="text" class="form-control" name="X-Y-2-0-input-4" id="X-Y-2-0-input-4" placeholder="example@gmail.com">
+              </div>  
+              <!-- Телефон -->
+              <div class="form-group pull-right">
+                <label for="X-Y-2-0-input-5">Телефон</label>
+                <input type="text" class="form-control" name="X-Y-2-0-input-5" id="X-Y-2-0-input-5" placeholder="8 926 081622">
+              </div>
+              <!-- /.Контактные данные -->
 
-            <div class="row">
-            <div class="form-group pull-left">
-              <label for="input1" class="header">Отдаете</label>
-              <input type="text" class="form-control error" id="input1" placeholder="Enter email" value="input with error" data-container="body" data-toggle="popover" data-placement="bottom" data-content="пожалуйста проверте правильность ввода данных" data-original-title="" title="">
-            </div>
-            <!-- focus -->
+              <!-- Комментрарии + Соглашение + Оформить заказ -->
+              <div class="form-group">
+                <textarea class="form-control" name="X-Y-2-0-area-0" id="X-Y-2-0-area-0" rows="3" placeholder="Вы можете оставить комментарий к вашей заявке"></textarea>              
+                <div class="checkbox">
+                  <label>
+                    <input type="checkbox" value="">
+                    Я согласен с <a href="">пользовательским соглашением</a> сервиса
+                  </label>
+                </div>
+                <button class="btn btn-defualt btn-block btn-success">Оформить заявку</button>
+              </div>
+              <!-- /.Комментрарии + Соглашение + Оформить заказ -->
+            </div><!-- /. <div class="X-Y-2-0 row"> -->
             
-            <div class="form-group pull-right">
-              <label for="input2">Сумма с учетемо коммисии</label>
-              <input type="text" class="form-control" id="input2" placeholder="Enter email" value="value without focus">
-            </div>
-
-            </div>
-
-
-
-            <div class="row">
-            <button type="button" class="btn btn-block btn-custom btn-color-green">Большая кнопка</button>
-            </div>
-            <div class="row">
-            <ol class="breadcrumb">
-              <li><a href="#">Home</a></li>
-              <li><a href="#">Library</a></li>
-              <li class="active">Data</li>
-            </ol>
-            </div>
-          </div>
+          </div><!-- /.<div class="col-sm-8 form-layout"> -->
+          
+          <div id="helper" class="col-sm-3 col-sm-offset-1">
+              <div class="popover big right">
+                <div class="arrow"></div>
+                <h4 class="popover-title">Подсказка</h4>
+                <div class="popover-content">
+                  <p>Если Вы обменяете 120$, то выгода для вас составит 5$.</p>
+                  <p>Изменить условия обмена?</p>
+                  <div class="form-group">
+                    <button type="button" class="btn btn-info pull-left btn-sm">Нет</button>
+                    <button type="button" class="btn btn-success pull-right btn-sm">Да</button>          
+                  <div class="clearfix"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="clearfix"></div>
+          </div><!-- <div class="col-sm-3"> -->
           </div>
           <!-- help-block -->
           <div class="row block help-block">
@@ -173,7 +293,7 @@
         <!-- /.left sidebar -->
         <!-- /.content -->
         <!-- right sidebar -->
-        <div id="sidebar-right" class="col-sm-3">
+        <div id="sidebar-right" class="col-sm-2">
             <div class="row block">
               <h2>Контакты:</h2>
               <p>
@@ -236,6 +356,7 @@
       </div><!-- <div id="footer"> -->
       <!-- /.Footer -->
       </div>  
+    
     </div>
     <!-- /.main + footer -->
   
