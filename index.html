@@ -27,7 +27,7 @@
           <div class="slogan-top"><span>Обмен электронных валют</span></div>
           <div class="slogan-bottom">Просто. Быстро. Удобно.</div>
         </div>
-        <div class="col-sm-4">
+        <div class="col-sm-4 header-right-col">
           <div class="phone">
             <div>8 800 333 45 76</div>
             <div class="phone-title">Звонок по России бесплатный</div>
@@ -75,63 +75,83 @@
           <div class="col-sm-8 form-layout">
             <!-- Выбор откуда/куда сервис -->
             <!-- "-" Popup "Выберите электронную в" -->
-            <div class="order-layout-1">
+            <div class="order-layout-header">
               <div id="exchange-main" class="row block">
                 <div class="col-sm-6">
-                <div class="btn-group">
-                  
-                  <button type="button" class="btn btn-info">Выбрать электронную валюту</button>
-                  <button type="button" class="btn btn-info collapsed dropdown-toggle" data-toggle="dropdown">
-                    <span class="caret"></span>
-                  </button>
-                  <ul class="dropdown-menu" role="menu">
-                    <li><a href="#">Action</a></li>
-                    <li><a href="#">Another action</a></li>
-                    <li><a href="#">Something else here</a></li>
-                    
-                    <li><a href="#">Separated link</a></li>
-                  </ul>
+                  <div class="btn-group">
+                    <button type="button" id="from-service" class="btn btn-info combobox" data-toggle="dropdown" data-hiddeninput="#combobox-1-value"><span></span>Выбрать электронную валюту</button>
+                    <button type="button" class="btn btn-info ddright collapsed combobox-arrow" data-toggle="dropdown">
+                      <span class="caret"></span>
+                    </button>
+                    <ul data-parent="#from-service" class="combobox-menu dropdown-menu" role="menu">
+                      <li class="item item1"><a data-val="val1" href="#">Perfect Money</a></li>
+                      <li class="item item2"><a data-val="val2" href="#">Liberty Reserve</a></li>
+                      <li class="item item3"><a data-val="val3" href="#">Яндекс.Деньги</a></li>
+                      <li class="item item4"><a data-val="val4" href="#">RBK Money</a></li>
+                      <li class="item item5"><a data-val="val5" href="#">Pay Pal</a></li>
+                      <li class="item item6"><a data-val="val6" href="#">LiqPay</a></li>
+                      <li class="item item7"><a data-val="val7" href="#">Qiwi</a></li>
+                      <li class="item item8"><a data-val="val8" href="#">OkPay</a></li>
+                      <li class="item item9"><a data-val="val9" href="#">Банковский счет</a></li>
+                      <li class="item item10"><a data-val="val10" href="#">Банковская карта</a></li>
+                    </ul>
+                    <input type="hidden" name="combobox-1-value" id="combobox-1-value" value="" />
+                  </div>
+                  <div id="popup-helper-1"><img src="img/wcbiz.p-app.ru/helper-popup1.png" alt="Выберите электронную валюту, которую хотите обменять"></div>
                 </div>
-                </div>
-                <div class="btn-group pull-right">
-                  <button type="button" class="btn btn-danger">Action</button>
-                  <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown">
-                    <span class="caret"></span>
-                  </button>
-                  <ul class="dropdown-menu" role="menu">
-                    <li><a href="#">Action</a></li>
-                    <li><a href="#">Another action</a></li>
-                    <li><a href="#">Something else here</a></li>
-                    <li class="divider"></li>
-                    <li><a href="#">Separated link</a></li>
-                  </ul>
-                </div>
-              </div>        
+                <div class="col-sm-6">
+                  <div class="btn-group pull-right">
+                    <button type="button" id="to-service" disabled="disabled" class="btn btn-info combobox" data-toggle="dropdown" data-hiddeninput="#combobox-2-value"><span></span>Выбрать электронную валюту</button>
+                    <button type="button" disabled="disabled" class="btn btn-info ddright collapsed combobox-arrow" data-toggle="dropdown">
+                      <span class="caret"></span>
+                    </button>
+                    <ul data-parent="#to-service" class="combobox-menu dropdown-menu" role="menu">
+                      <li class="item item1"><a data-val="val1" href="#">Perfect Money</a></li>
+                      <li class="item item2"><a data-val="val2" href="#">Liberty Reserve</a></li>
+                      <li class="item item3"><a data-val="val3" href="#">Яндекс.Деньги</a></li>
+                      <li class="item item4"><a data-val="val4" href="#">RBK Money</a></li>
+                      <li class="item item5"><a data-val="val5" href="#">Pay Pal</a></li>
+                      <li class="item item6"><a data-val="val6" href="#">LiqPay</a></li>
+                      <li class="item item7"><a data-val="val7" href="#">Qiwi</a></li>
+                      <li class="item item8"><a data-val="val8" href="#">OkPay</a></li>
+                      <li class="item item9"><a data-val="val9" href="#">Банковский счет</a></li>
+                      <li class="item item10"><a data-val="val10" href="#">Банковская карта</a></li>
+                    </ul>
+                    <input type="hidden" name="combobox-2-value" id="combobox-2-value" value="" />
+                  </div>
+                </div>  
+              </div>
               <!-- X-Y-1-0 -->
               <!-- Ввод обрабатываемой суммы  -->
               <!-- Сумма с учетом коммиссии  -->
               <!-- "-" Подсказка о приемуществах другого ввода  -->
-              <div class="X-Y-1-0 row">
+              <div id="layout-header-block-1" class="X-Y-1-0 row">
                 <!-- Отдаете -->
-                <div class="form-group pull-left">
-                  <label for="X-Y-1-0-input-1" class="header">Отдаете</label>
-                  <input type="text" class="form-control" name="X-Y-1-0-input-1" id="X-Y-1-0-input-1" placeholder="Enter email">
+                <div class="col-sm-6">
+                  <div class="form-group pull-left">
+                    <label for="X-Y-1-0-input-1" class="header">Отдаете</label>
+                    <input type="text" class="form-control" name="X-Y-1-0-input-1" id="X-Y-1-0-input-1" placeholder="сумма">
+                  </div>
                 </div>  
                 <!-- Сумма с учетемо коммисии -->
-                <div class="form-group pull-right">
-                  <label for="X-Y-1-0-input-2" class="header">Сумма с учетемо коммисии</label>
-                  <input type="text" class="form-control" id="X-Y-1-0-input-2" placeholder="Enter email" value="90" disabled>
+                <div class="col-sm-6">
+                  <div class="form-group pull-right">
+                    <label for="X-Y-1-0-input-2" class="header">Сумма с учетемо коммисии</label>
+                    <input type="text" class="form-control" id="X-Y-1-0-input-2" placeholder="Enter email" value="90" disabled>
+                  </div>
+                </div>  
+                
+                <div id="layout-header-block-2" class="row">
+                  <button class="btn btn-defualt btn-block btn-success" disabled="disabled">Продолжить</button>
                 </div>
-
-                <button class="btn btn-defualt btn-block btn-success">Продолжить</button>
               </div>
             </div><!-- <div class="order-layout-1"> -->
             <!-- breadcrumb -->
-            <div class="X-Y-2-0 row">
+            <div id="breadcrumb" class="row">
               <ol class="breadcrumb">
-                <li><a href="#">Заполнение формы</a></li>
-                <li><a href="#">Подтверждение заявки</a></li>
-                <li class="active">Перевод средств</li>
+                <li class="active">Заполнение формы</li>
+                <li>Подтверждение заявки</li>
+                <li>Перевод средств</li>
               </ol>
             </div>
             <!-- /.breadcrumb -->
@@ -269,10 +289,10 @@
             </div><!-- <div class="order-layout-3"> -->
 
             <div class="order-layout-1">
-              <div class="X-Y-5-0 row">
+              <div id="layout-1-block-3" class="X-Y-5-0 row">
                 <h4>Информация о банке</h4>
                 <div class="row">
-                  <div class="col-sm-7">
+                  <div class="col-sm-7 field-1">
                    <div class="btn-group">
                     <button type="button" class="btn btn-info collapsed search-bank" data-toggle="collapse" data-target="#search-collapse-box">Выберите наименование банка</button>
                     <button class="btn btn-info collapsed mini" data-toggle="collapse" data-target="#search-collapse-box">
@@ -295,11 +315,15 @@
                     </div><!-- <div id="search-collapse-box" class="collapse out"> -->
                     </div>
                   </div> <!-- <div class="inline-form">             -->
-                  <div class="span-sm-5">
-                    <div class="form-group pull-right">
+                  
+                  <div class="span-sm-4 pull-right">
+                    <div class="form-group  field-2">
                       <label for="X-Y-2-0-input-2">БИК банка<span class="info">*</span></label>
                       <input type="text" class="form-control btn-md" name="X-Y-2-0-input-2" id="X-Y-2-0-input-2" placeholder="123456789">
                     </div>
+                  </div>
+                  <div class="span-sm-1 pull-right or-title">
+                    или
                   </div>
                 </div>
                 <!-- Номер банковской карты + Номер расчетного счета -->
@@ -329,14 +353,18 @@
               <div class="X-Y-2-0 row">
                 <h4>Данные кошельков</h4>
                 <!-- Аккаунт отправителя -->
-                <div class="form-group pull-left">
-                  <label for="X-Y-2-0-input-1">Аккаунт отправителя<span class="info">*</span></label>
-                  <input type="text" class="form-control" name="X-Y-2-0-input-1" id="X-Y-2-0-input-1" placeholder="1234567">
-                </div>  
+                <div class="col-sm-4">
+                  <div class="form-group">
+                    <label for="X-Y-2-0-input-1">Аккаунт отправителя<span class="info">*</span></label>
+                    <input type="text" class="form-control btn-md pocket-control" name="X-Y-2-0-input-1" id="X-Y-2-0-input-1" placeholder="1234567">
+                  </div>  
+                </div>
                 <!-- Аккаунт получателя -->
-                <div class="form-group pull-right">
-                  <label for="X-Y-2-0-input-2">Аккаунт получателя<span class="info">*</span></label>
-                  <input type="text" class="form-control" name="X-Y-2-0-input-2" id="X-Y-2-0-input-2" placeholder="1234567">
+                <div class="col-sm-4">
+                  <div class="form-group">
+                    <label for="X-Y-2-0-input-2">Аккаунт получателя<span class="info">*</span></label>
+                    <input type="text" class="form-control btn-md pocket-control" name="X-Y-2-0-input-2" id="X-Y-2-0-input-2" placeholder="1234567">
+                  </div>
                 </div>
               </div>
               <!-- /.Данные кошельков -->
@@ -376,7 +404,7 @@
                       Я согласен с <a href="">пользовательским соглашением</a> сервиса
                     </label>
                   </div>
-                  <button class="btn btn-defualt btn-block btn-success">Оформить заявку</button>
+                  <button id="step-2" class="btn btn-defualt btn-block btn-success">Оформить заявку</button>
                 </div>
                 <!-- /.Комментрарии + Соглашение + Оформить заказ -->
               </div><!-- /. <div class="X-Y-2-0 row"> -->
@@ -401,17 +429,17 @@
           </div><!-- <div class="col-sm-3"> -->
           </div>
           <!-- help-block -->
-          <div class="row block help-block">
+          <div class="row block help-how-block">
             <div class="col-sm-12">
-            <h2>Как произвести обмен электронной валюты на нашем сайте?</h2>
+            <h4>Как произвести обмен электронной валюты на нашем сайте?</h4>
 
-            <div>Сделать это достаточно просто, для этого нужно:</div>
-            <ul class="help-how">
+            <p>Сделать это достаточно просто, для этого нужно:</p>
+            <ol class="help-how">
               <li class="help-item1">Выбрать электронные валюты, которые вы хотите обменять</li>
               <li class="help-item2">Заполнить появившиеся поля   </li>
               <li class="help-item3">Нажать на кнопку «оформить»</li>
               <li class="help-item4">Проверить и подтвердить заявку</li>
-            </ul>        
+            </ol>        
             </div>
           </div><!-- /.help-block -->
 
@@ -501,15 +529,7 @@
 
     <script src="js/jquery.js"></script>
     <script src="dist/js/bootstrap.min.js"></script>    
-    <script type="text/javascript">
-        $('input.error').popover(
-          {
-            html: true,
-            content: function () {
-        return jQuery('.popover-content').html() + "1";
-      }
-          });
-      
-    </script>
+    <script src="js/index.js"></script>
+    
   </body>
 </html>

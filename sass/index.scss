@@ -147,10 +147,14 @@ input.form-control{
 		color: #575756;
 		font-weight: lighter;
 	}
+	.header-right-col{
+		text-align: right;
+
+	}
 	.phone{
 		font-size: 20px;
-		
-		padding: 5px 0 20px 32px;
+		display: inline-block;
+		padding: 5px 0 20px 55px;
 		@include bg-img("phone.png");
 		background-position: 0 40%;
 		color: #36A8E0;
@@ -344,20 +348,22 @@ label {
 #helper{
 	.popover{
 		.popover-title{
-			color: #fff;
+			// color: #fff;
+			font-style: normal;
 		}
 		display: block;
 		width: 143px;
 		padding: 0 7px;
 		opacity: 0.9;
-		margin-top: 40px;
+		margin-top: 0px;
 		.form-group{
 			margin: 0;
 		}		
-		.popover-conent 
+		.popover-content 
 		{
+			padding-top: 0px;
 			p{
-				margin-bottom: 7px;
+				margin-bottom: 5px;
 			}
 		}
 	}
@@ -437,13 +443,14 @@ label {
   background-color: #fff;
   color: #000;
 }
-//order layouts
-// .order-layout-1{
-// 	display: none;
-// }
-// .order-layout-2{
-// 	display: none;
-// }
+// order layouts
+#breadcrumb,
+.order-layout-1,
+.order-layout-2,
+.order-layout-3, 
+#helper{
+	display: none;
+}
 // <!-- special-offer -->
 .special-offer{
 	background-color: #fff;
@@ -457,6 +464,182 @@ label {
 
 	}
 }
+//first drop-down
+#exchange-main{
+	button[disabled]{
+		background-color: #c6c6c6;
+	}
+	.combobox{
+		width: 204px;
+		text-align: left;
+		&.item{
+			padding-left: 54px;
+		}
+	}
+	.btn{
+		padding: 10px 2px 10px 12px;
+	}
+	.ddright{
+		padding: 10px 4px;	
+	}
+	ul.dropdown-menu{
+		margin:0;
+		padding: 0;
+		
+		margin-top: -1px;
+		position: absolute;
+		width: 221px;
+		@include box-shadow( none );
+		left: -1px;
 
+		border-color: rgba( 255, 255, 255, 0.15 );
+		li{
+			&.item{
+				a{
+						@include bg-img("services.png");
+						padding: 6px 13px 6px 55px;
+						background-position: 13px 0px;
+						background-repeat: repeat-y;
+						line-height: 1;
+						background-color: $brand-info;
+						color: #fff;
+						border-bottom: 1px solid lighten( $brand-info, 10% );
+						&:hover{
+							background-color: lighten( $brand-info, 10%);
+						}
+					}
+				@for $i from 1 through 10 {	
+					&.item#{$i} a{
+						background-position: 13px -#{($i - 1) * 27}px;
+					}
+				}
 
+			}
+		}
+	}
+}
 
+#from-service,#to-service{
+
+	&.item {
+		
+		span{
+			@include bg-img("services.png");
+			position: absolute;
+			width: 32px;
+			height: 27px;
+			background-repeat: repeat-y;
+			top: 5px;
+			left: 13px;
+		}}
+	@for $i from 1 through 10 {	
+					&.item#{$i} span{
+						background-position: 0px -#{($i - 1) * 27}px;
+					}
+				}
+}
+#popup-helper-1{
+	margin-top: 10px;
+	margin-bottom: 30px;
+}
+#layout-header-block-1 {
+	display: none;
+	margin-top: 5px;
+	button{
+		margin-top: 13px;
+	}
+	input{
+		font-family: 'helvetica';
+		text-align: right;
+		font-size: 18px;
+		height: 27px;
+		width: 219px;
+	}
+}
+.help-how-block{
+	font-size: 12px;
+	margin-top: 20px;
+	h4{
+		margin-bottom: 15px;
+	}
+	ol {
+	    counter-reset:li; /* Initiate a counter */
+	    margin-left:0; /* Remove the default left margin */
+	    padding-left:0; /* Remove the default left padding */
+	}
+	ol > li {
+	    position:relative; /* Create a positioning context */
+	    margin:0 0 6px 1.5em; /* Give each list item a left margin to make room for the numbers */
+	    padding: 0px 0px; /* Add some spacing around the content */
+	    list-style:none; /* Disable the normal item numbering */
+	    font-size: 12px;
+	}
+	ol > li:before {
+	    content:counter(li)"."; /* Use the counter as content */
+	    counter-increment:li; /* Increment the counter by 1 */
+	    /* Position and style the number */
+	    position:absolute;
+	    top:-2px;
+	    left:-20px;
+	    -moz-box-sizing:border-box;
+	    -webkit-box-sizing:border-box;
+	    box-sizing:border-box;
+	    //width:1em;
+	    /* Some space between the number and the content in browsers that support
+	       generated content but not positioning it (Camino 2 is one example) */
+	    margin-right:8px;
+	    padding:0px 3px;
+	    color: #333;
+	    background: $brand-info;
+	    text-align:center;
+	}
+	li ol,
+	li ul {margin-top:6px;}
+	ol ol li:last-child {margin-bottom:0;}
+}
+//NEWS
+.news-block{
+	margin-left: 20px;
+	font-size: 12px;
+	h2{
+		color: $brand-info;
+		font-size: 14px;
+		font-style: italic;
+		margin-bottom: 20px;
+	}
+	ul{
+			padding-left: 20px;
+			padding-right: 40px;
+		}
+}
+
+#addition-info{
+	margin-top: 30px;
+}
+
+#breadcrumb{
+	margin-top: 10px;
+	.breadcrumb{
+		padding: 5px 15px;
+		margin-bottom: 5px;
+	}
+}
+
+#layout-1-block-3{
+	.field-1{
+		margin-top: 8px;
+	}
+	.field-2{
+		margin-top: -10px;
+	}
+	.or-title{
+		position: relative;
+		left: -29px;
+		margin-top: 17px;		
+	}
+}
+.pocket-control{
+	@include bg-img("bg-pocket.png");
+	background-position: 5px center;
+	padding-left: 1.5em;
+}

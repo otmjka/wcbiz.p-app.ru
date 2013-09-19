@@ -429,8 +429,12 @@
   .open & { &.dropdown-toggle {
     background-image: none;
   } }
+  &[disabled]{
+    background-color: $btn-link-disabled-color;
+    opacity: 1;
+  }
   &.disabled,
-  &[disabled],
+  
   fieldset[disabled] & {
     &,
     &:hover,
