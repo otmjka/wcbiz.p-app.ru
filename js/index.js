@@ -2,6 +2,7 @@
 jQuery( document ).ready( function($){
   $( "#from-service" ).imgCombobox();
   $( "#to-service" ).imgCombobox();
+
   $('.combobox').on( "success", function() { 
     console.log(  'success event by #' + $input.attr("id"),'::',$input.attr("value") ); } );
   $( "#from-service" ).on( "success", function(){
@@ -31,13 +32,20 @@ jQuery( document ).ready( function($){
 
 //продолжить нажатие
   $( "#step-2" ).click( function() {
-    
-
+    //показываем breadcrumb
+    $( '#breadcrumb').show();
+    //скрываем выбор сервисов
+    $( '.order-layout-header' ).hide();
     //скрываем следуюзий этап
     $( '.order-layout-1').hide();
     //показываем следуюзий этап
-    $( '.order-layout-2').show();
+    $( '.order-layout-3').show();
+    //$( '.order-layout-2-1').hide();
+    // $( '.news-block').hide();
+    // $( '.help-how-block').hide();
   } );
+//симуляция нажатия
+//$( "#step-2" ).click();  
 });
 
 (function( $ ){

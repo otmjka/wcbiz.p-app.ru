@@ -4,20 +4,69 @@
 
 
 .breadcrumb {
-  padding: 8px 15px;
+  padding: 0;
   margin-bottom: $line-height-computed;
   list-style: none;
-  background-color: $breadcrumb-bg;
+  //background-color: $breadcrumb-bg;
+  background-color: #DADADA;
+  color: #fff;
+  font-size: 12px;
+  
   border-radius: $border-radius-base;
   > li {
     display: inline-block;
-    &+li:before {
-      content: "/\00a0"; // Unicode space added since inline-block means non-collapsing white-space
-      padding: 0 5px;
-      color: $breadcrumb-color;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 30px;
+    padding-right: 13px;
+    position: relative;
+    left: -3px;
+    &.active{ @include bg-img("breadcrumb-arrow-a-bg.png"); }
+    &:first-child{
+        left: 0;
+      }
+    &:last-child, &:first-child{
+      background-image: none;
+
     }
+    &:last-child{
+      padding-right: 20px;
+    }
+    &:last-child.active{ @include bg-img("breadcrumb-arrow-a-bg.png"); }
+    &:after {
+      // padding: 0;
+      // content: "";
+      // padding: 0;
+       // border: 13px solid transparent;
+       // border-left: 9px solid blue;
+      // width: 0;
+      // height: 0;
+      // display: inline-block;
+      // font-size: 0px;
+      // position: absolute;
+      // top: 10px;
+      content: "";
+      position: absolute;
+      width: 13px;
+      height: 26px;
+      @include bg-img("breadcrumb-arrow-1.png");
+      top: 0;
+      right: -16px;
+
+    }
+    &.active:after{
+      @include bg-img("breadcrumb-arrow-a.png");
+      right: -12px;
+    }
+    &:last-child:after{
+        padding: 0;
+        content: none;
+        border: 0;
+
+      }
   }
   > .active {
-    color: $breadcrumb-active-color;
+    //color: $breadcrumb-active-color;
+    background-color: $brand-info;
   }
 }

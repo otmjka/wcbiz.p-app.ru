@@ -7,8 +7,9 @@
     <title> | Обмен электронных валют web-capital.biz</title>
     <!-- <link href="dist/css/bootstrap.min.css" rel="stylesheet"> -->
     
+    <link href="css/bs.css" rel="stylesheet">
     <link href="css/index.css" rel="stylesheet">
-    <link href="css/1.css" rel="stylesheet">
+    
     <!--[if lt IE 9]>
       <script src="assets/js/html5shiv.js"></script>
       <script src="assets/js/respond.min.js"></script>
@@ -149,9 +150,9 @@
             <!-- breadcrumb -->
             <div id="breadcrumb" class="row">
               <ol class="breadcrumb">
-                <li class="active">Заполнение формы</li>
-                <li>Подтверждение заявки</li>
-                <li>Перевод средств</li>
+                <li class="complite">1. Заполнение формы</li>
+                <li class="active">2. Подтверждение заявки</li>
+                <li>3. Перевод средств</li>
               </ol>
             </div>
             <!-- /.breadcrumb -->
@@ -176,12 +177,12 @@
                     98 USD<br />
                     U1234567<br />
                     Иванов Иван<br />
-                    В случаи неправильного заполнения формы, свяжитесь со мной по такому то телефону.
+                    <em>В случаи неправильного заполнения формы, свяжитесь со мной по такому то телефону.</em>
                   </div>
                 </div><!-- <div class="row"> -->
                 <!-- /.Описание заявки -->
                 <!-- Предупреждение -->
-                <div class="row">
+                <div class="row order-layout-2-1-1">
                   <div class="alert alert-warning">Пожалуйста, будьте внимательны, при оформлении заявки.</div>
                 </div>  
                 <!-- /.Предупреждение -->
@@ -204,7 +205,7 @@
                   </div>
                   <!-- /.success sign -->
                   <!-- success message -->
-                  <div class="col-sm-10">
+                  <div class="col-sm-10 success-message">
                     <p>Ваша заявка №123, успешно создана!</p>
                     <p>Вам на почту или телефон, будут приходить уведомления о статусе вашей заявки.</p>
 
@@ -239,27 +240,29 @@
                 </div><!-- <div class="row"> -->
                 <!-- /.main page link + social -->
                 <!-- special-offer -->
-                <div class="row special-offer">
-                  <div class="offer-box"></div>
-                  <div class="offer-box"></div>
-                  <div class="offer-box"></div>
-                  <div class="offer-box"></div>
-                  <div class="clearfix"></div>
-                </div>
-                <!-- /.special-offer -->
-              </div>
+                
+              </div><!-- <div class="order-layout-2-2"> -->
               <!-- /.Ваша заявка успешно отправлена -->
-              <!-- Информация о банке -->
-              <!-- !!!! добавить общий div "Заполнение формы" -->
+              <div class="order-layout-2-3">
+                  <div class="row title"><p>Возможно это Вас может заинтересовать:</p></div>
+                  <div class="row special-offer">
+
+                    <div class="offer-box"></div>
+                    <div class="offer-box"></div>
+                    <div class="offer-box"></div>
+                    <div class="offer-box"></div>
+                    <div class="clearfix"></div>
+                  </div><!-- /.special-offer -->
+                </div>
             </div><!-- <div class="order-layout-2"> -->
             
             <div class="order-layout-3">
-              <div class="row">
+              <div class="row order-layout-3-1">
                 <p>Инструкции по переводу: </p>
-                <ol>
+                <ul>
                   
 
-                  <li>Для перевода у Вас должна быть подключена услуга "Сбербанк Онлайн". Зайдите в интернет банк <a href="">здесь</a> и переведите 1000 рублей на следующие реквизиты:
+                  <li>1. Для перевода у Вас должна быть подключена услуга "Сбербанк Онлайн". Зайдите в интернет банк <a href="">здесь</a> и переведите 1000 рублей на следующие реквизиты:
 
                   <p><strong>Наименование получателя:</strong><br />
                   ЕЛЕНА ВЛАДИМИРОВНА О.
@@ -273,13 +276,13 @@
                   <p><strong>Комментарий получателю:</strong><br>
                   Частный перевод </p>
                   </li>
-                  <li>Только после того как отправите деньги на указанные выше реквизиты и с вашего счета спишется эта сумма нажмите кнопку "Уведомить об оплате" и введите данные платежа.</li>
-                </ol>
+                  <li>2. Только после того как отправите деньги на указанные выше реквизиты и с вашего счета спишется эта сумма нажмите кнопку "Уведомить об оплате" и введите данные платежа.</li>
+                </ul>
               </div>  
-              <div class="row">
+              <div class="row order-layout-3-2">
                 <div class="alert alert-warning">Если после платежа не нажмете кнопку «уведомления о платеже», Ваша заявка так и не начнет обрабатываться.</div>
               </div>
-              <div class="row">
+              <div class="row order-layout-3-3">
                 <div class="form-group">
                   <button type="button" class="btn btn-danger btn-md pull-left">Изменить заявку</button>
                   <button type="button" class="btn btn-success btn-md pull-right">Я отправил</button>          

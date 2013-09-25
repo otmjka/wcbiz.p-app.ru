@@ -3,7 +3,7 @@
 //@import "vendors/_compass";
 @import "partials/_mixins";
 @import "compass/css3/";
-@import "lib/_bootstrap";
+@import "lib/_variables";
 @import "partials/_fonts";
 @import "partials/_varibles";
 	$navBgColor: rgba( 143, 143, 143, 1 );
@@ -30,10 +30,6 @@ body{
 	color: #575756;
 	background-color: transparent;
 }
-
-
-
-
 
 //Bootstrap Reset Classes
 .container{
@@ -327,13 +323,13 @@ a.social{
 	background-color: $brand-success;
 	padding: 9px 7px;
 }
-@for $i from 0 through 12 {
-	@for $j from 0 through 12{
-		.X-Y-#{$i}-#{$j}{
-			margin-top: 0px;
-		}
-	}
-}
+// @for $i from 0 through 12 {
+// 	@for $j from 0 through 12{
+// 		.X-Y-#{$i}-#{$j}{
+// 			margin-top: 0px;
+// 		}
+// 	}
+// }
 //Content - form layot - * -color
 label {
 		.info{
@@ -466,6 +462,7 @@ label {
 }
 //first drop-down
 #exchange-main{
+	margin-top: 15px;
 	button[disabled]{
 		background-color: #c6c6c6;
 	}
@@ -620,7 +617,7 @@ label {
 #breadcrumb{
 	margin-top: 10px;
 	.breadcrumb{
-		padding: 5px 15px;
+		// padding: 5px 15px;
 		margin-bottom: 5px;
 	}
 }
@@ -642,4 +639,67 @@ label {
 	@include bg-img("bg-pocket.png");
 	background-position: 5px center;
 	padding-left: 1.5em;
+}
+
+//Информация о заказе
+.order-layout-2-1{
+	margin-top: 15px;
+	line-height: 1.3;
+	font-size: 13px;
+	.order-layout-2-1-1{
+		margin-top: 35px;
+	}
+}
+
+//Сообщение об успешном совершении платежа
+.order-layout-2-2{
+	line-height: 1.3;
+	.success-message{
+		padding-left: 5px;
+		font-size: 13px;
+		strong{
+			display: inline-block;
+			margin: 10px 0;
+		}
+	}
+}
+
+.order-layout-2-3{
+	margin-top: 40px;
+	.title{
+		font-size: 15px;
+	}
+}
+
+.order-layout-3{
+	margin-top: 15px;
+	margin-bottom: 0px;
+	font-size: 13px;
+	.order-layout-3-3{
+		.form-group{
+			margin-bottom: 0;
+		}
+	}
+	.order-layout-3-2{
+		margin-top: 30px;
+		.alert{
+			font-size: 13px;
+		}
+	}
+	.order-layout-3-1{
+		ul{
+			list-style: none;
+			padding: 0;
+			margin: 0;
+		}}
+}
+
+#breadcrumb{
+	.complite{
+		background-color: #878787;
+		@include bg-img("breadcrumb-arrow-1.png");
+		&:first-child{
+			background-image: none;
+		}
+	}
 }
