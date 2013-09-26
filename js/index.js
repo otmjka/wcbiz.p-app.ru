@@ -7,15 +7,20 @@ jQuery( document ).ready( function($){
     console.log(  'success event by #' + $input.attr("id"),'::',$input.attr("value") ); } );
   $( "#from-service" ).on( "success", function(){
     $( "#popup-helper-1" ).hide();
+    $( "#popup-helper-2" ).show();
     $( "button", $( this ).parent() ).attr( "disabled", "disabled" ); 
     $ ("button", $( "#to-service" ).parent() ).removeAttr( "disabled" );
-    $( "#layout-header-block-1" ).show();
+    
   });
 
   $( "#to-service" ).on( "success", function(){
+    
+    $( "#popup-helper-2" ).hide();
     $( "button", $( this ).parent() ).attr( "disabled", "disabled" ); 
     
     $( "button", "#layout-header-block-2" ).removeAttr( "disabled" );
+    $( "#layout-header-block-1" ).show();
+
     $( "#helper" ).show();
   });
   //продолжить нажатие

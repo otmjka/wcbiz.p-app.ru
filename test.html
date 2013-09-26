@@ -16,32 +16,82 @@
   </head>
 
   <body>
-    
-
     <div class="container">
-    <div id="MyCombobox" class="input-append dropdown combobox">
-      <input class="span2" type="text">
-      <button class="btn" data-toggle="dropdown"><i class="caret"></i></button>
-      <ul class="dropdown-menu">
-        <li data-value="1" data-foo="bar"><a href="#">One</a></li>
-        <li data-value="2"><a href="#">Two</a></li>
-        <li data-value="3"><a href="#">Three</a></li>
-      </ul>
+    <ul class="pagination">
+      <li><a href="#"><span class="back">&#9668;&nbsp;</span> в начало</a></li>
+      <li><a href="#">1</a></li>
+      <li><a href="#">2</a></li>
+      <li><a href="#">3</a></li>
+      <li><a href="#">4</a></li>
+      <li><a href="#">5</a></li>
+      <li><a href="#">в конец <span class="back">&nbsp;&#9658;</span></a></li>
+    </ul>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam, nisi, tenetur, ad necessitatibus commodi beatae perferendis esse quas nihil iusto aspernatur tempora sint repellendus quae repudiandae temporibus eligendi ipsam dolores?</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam, nisi, tenetur, ad necessitatibus commodi beatae perferendis esse quas nihil iusto aspernatur tempora sint repellendus quae repudiandae temporibus eligendi ipsam dolores?</p>
+        <div class="checkbox">
+                    <label>
+                      <input type="checkbox" value="">
+                      Я согласен с <a href="">пользовательским соглашением</a> сервиса
+                    </label>
+                  </div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam, nisi, tenetur, ad necessitatibus commodi beatae perferendis esse quas nihil iusto aspernatur tempora sint repellendus quae repudiandae temporibus eligendi ipsam dolores?</p>
+            <div class="radio">
+  <label>
+    <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+    Option one is this and that&mdash;be sure to include why it's great
+  </label>
+</div>
+<div class="radio">
+  <label>
+    <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+    Option two can be something else and selecting it will deselect option one
+  </label>
+</div>
     </div>
-    <div class="dropdown">
-      <a data-toggle="dropdown" href="#">Dropdown trigger<i class="caret"></i></a>
-      
-      <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
-      
-      <div class="btn-group">
-        <button type="button" class="btn btn-default">Left</button>
-        <button type="button" class="btn btn-default">Left</button>
-        <button type="button" class="btn btn-default">Right</button>
-      </div>
-      
-      </ul>
-
+    <div class="container">
+    <style>
+      /* Example modals */
+      .bs-example-modal {
+        background-color: #f5f5f5;
+      }
+      .bs-example-modal .modal {
+        position: relative;
+        top: auto;
+        right: auto;
+        left: auto;
+        bottom: auto;
+        z-index: 1;
+        display: block;
+      }
+      .bs-example-modal .modal-dialog {
+        left: auto;
+        margin-left: auto;
+        margin-right: auto;
+      }    
+    </style>
+    <div class="bs-example-modal">
+      <div class="modal">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+              <h4 class="modal-title">Modal title</h4>
+            </div>
+            <div class="modal-body">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic, dolore, necessitatibus, dolores facilis neque ratione eveniet maiores asperiores perspiciatis fuga quos ut est iusto eaque quisquam labore architecto nisi deleniti?</p>
+            </div>
+            <div class="modal-footer">
+              <div class="form-group">
+                <button type="button" class="pull-left btn btn-default btn-md" data-dismiss="modal">Закрыть</button>
+                <button type="button" class="pull-right btn btn-md btn-success">Save changes</button>
+              </div>
+            </div>
+          </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+      </div>      
     </div>
+<p class="muted" style="margin-bottom: 0;">Tight pants next level keffiyeh <a href="#" data-toggle="tooltip" title="" data-original-title="Default tooltip">you probably</a> haven't heard of them. Photo booth beard raw denim letterpress vegan messenger bag stumptown. Farm-to-table seitan, mcsweeney's fixie sustainable quinoa 8-bit american apparel <a href="#" data-toggle="tooltip" title="Another tooltip">have a</a> terry richardson vinyl chambray. Beard stumptown, cardigans banh mi lomo thundercats. Tofu biodiesel williamsburg marfa, four loko mcsweeney's cleanse vegan chambray. A really ironic artisan <a href="#" data-toggle="tooltip" title="" data-original-title="Another one here too">whatever keytar</a>, scenester farm-to-table banksy Austin <a href="#" data-toggle="tooltip" title="The last tip!">twitter handle</a> freegan cred raw denim single-origin coffee viral.
+      </p>    
     <style type="text/css">
       .bs-example-popover .popover {
       position: relative;
@@ -156,93 +206,9 @@
 
     </div>
     <h2>collapse + searchbar</h2>
-    <div class="btn-group">
-    <button type="button" class="btn btn-custom btn-color-blue collapsed search-bank" data-toggle="collapse" data-target="#demo">Выберите наименование банка</button><button class="btn btn-custom btn-color-blue collapsed mini" data-toggle="collapse" data-target="#demo"><span class="caret"></span></button>
-    <div class="clearfix"></div>
-    
-    <div id="demo" class="collapse out">
-      <div class="form-group">
-      <div class="input-group">
-              <input type="text" class="form-control" id="search-bank" placeholder="Поиск...">
-                <span class="input-group-btn">
-                <button class="btn btn-custom search-icon" type="button"><span class="glyphicon glyphicon-search"></span></button>
-                </span>
-            </div><!-- /input-group -->  
-            </div>
-    </div>
-    </div>
 
     
-    <div class="custom-btn-group" id="buttons-green">
-      <span class="btn-size-large">
-      <button type="button" class="btn btn-custom btn-color-green">Большая кнопка</button>
-      </span>
-      <span class="btn-size-medium">
-      <button type="button" class="btn btn-custom btn-color-green">Средняя кнопка</button>
-      </span>
-      <span class="btn-size-normal">
-      <button type="button" class="btn btn-custom btn-color-green">Обычная</button>
-      </span>
-      <span class="btn-size-small">
-      <button type="button" class="btn btn-custom btn-color-green">мк</button>
-      </span>
-    </div>
-    <div class="custom-btn-group" id="buttons-red">
-      <span class="btn-size-large">
-      <button type="button" class="btn btn-custom btn-color-red">Большая кнопка</button>
-      </span>
-      <span class="btn-size-medium">
-      <button type="button" class="btn btn-custom btn-color-red">Средняя кнопка</button>
-      </span>
-      <span class="btn-size-normal">
-      <button type="button" class="btn btn-custom btn-color-red">Обычная</button>
-      </span>
-      <span class="btn-size-small">
-      <button type="button" class="btn btn-custom btn-color-red">мк</button>
-      </span>
-    </div>
-    <div class="custom-btn-group" id="buttons-blue">
-      <span class="btn-size-large">
-      <button type="button" class="btn btn-custom btn-color-blue">Большая кнопка</button>
-      </span>
-      <span class="btn-size-medium">
-      <button type="button" class="btn btn-custom btn-color-blue">Средняя кнопка</button>
-      </span>
-      <span class="btn-size-normal">
-      <button type="button" class="btn btn-custom btn-color-blue">Обычная</button>
-      </span>
-      <span class="btn-size-small">
-      <button type="button" class="btn btn-custom btn-color-blue">мк</button>
-      </span>
-    </div>
-    <div class="custom-btn-group" id="buttons-lightGray">
-      <span class="btn-size-large">
-      <button type="button" class="btn btn-custom btn-color-lightGray">Большая кнопка</button>
-      </span>
-      <span class="btn-size-medium">
-      <button type="button" class="btn btn-custom btn-color-lightGray">Средняя кнопка</button>
-      </span>
-      <span class="btn-size-normal">
-      <button type="button" class="btn btn-custom btn-color-lightGray">Обычная</button>
-      </span>
-      <span class="btn-size-small">
-      <button type="button" class="btn btn-custom btn-color-lightGray">мк</button>
-      </span>
-    </div>
-    <div class="custom-btn-group" id="buttons-Gray">
-      <span class="btn-size-large">
-      <button type="button" class="btn btn-custom btn-color-Gray">Большая кнопка</button>
-      </span>
-      <span class="btn-size-medium">
-      <button type="button" class="btn btn-custom btn-color-Gray">Средняя кнопка</button>
-      </span>
-      <span class="btn-size-normal">
-      <button type="button" class="btn btn-custom btn-color-Gray">Обычная</button>
-      </span>
-      <span class="btn-size-small">
-      <button type="button" class="btn btn-custom btn-color-Gray">мк</button>
-      </span>
-    </div>
+    
 
 <div class="custom-btn-group" id="buttons-green">
       <span class="btn-size-large">
@@ -345,13 +311,11 @@
     <!-- Placed at the end of the document so the pages load faster -->
     
     <script src="js/jquery.js"></script>
-    <script src="dist/js/typeahead.js"></script>  
-    <script src="dist/js/bootstrap.min.js"></script>    
-    <script src="json/banks.js"></script>    
+    <script src="dist/js/tooltip.js"></script>    
     
     <script type="text/javascript">
       jQuery(document).ready( function($){
-        //$('#search-bank').typeahead({local: banks});
+        $('*[data-toggle=tooltip]').tooltip();
       });
     </script>      
   </body>

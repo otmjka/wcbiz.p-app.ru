@@ -8,7 +8,7 @@
 @import "partials/_varibles";
 	$navBgColor: rgba( 143, 143, 143, 1 );
 	$navBgColorHover: rgba( 0, 141, 201, 1 );
-
+@import "partials/_checkradio";
 //Buttons styles
 @import "partials/_buttons";
 //Common Resets Styles
@@ -40,6 +40,26 @@ body{
 	padding-left: 0;
 	padding-right: 0;	
 }
+//checkbox
+// input[type=checkbox], input[type=radio]{
+// -webkit-appearance: none;
+// appearance: none;
+// width: 13px;
+// height: 13px;
+// margin: 0;
+// cursor: pointer;
+// vertical-align: bottom;
+// background: #fff;
+// border: 1px solid #dcdcdc;
+// -webkit-border-radius: 1px;
+// -moz-border-radius: 1px;
+// border-radius: 1px;
+// -webkit-box-sizing: border-box;
+// -moz-box-sizing: border-box;
+// box-sizing: border-box;
+// position: relative;
+// }
+
 @for $i from 1 through 12 {
 .col-sm-#{($i + 1)} {
 	padding-left: 0;
@@ -342,6 +362,7 @@ label {
 }
 //Content - Helper popover
 #helper{
+	margin-top: 25px;
 	.popover{
 		.popover-title{
 			// color: #fff;
@@ -535,9 +556,12 @@ label {
 					}
 				}
 }
-#popup-helper-1{
+#popup-helper-1, #popup-helper-2{
 	margin-top: 10px;
 	margin-bottom: 30px;
+}
+#popup-helper-2{
+	display: none;
 }
 #layout-header-block-1 {
 	display: none;
@@ -701,5 +725,12 @@ label {
 		&:first-child{
 			background-image: none;
 		}
+	}
+}
+
+.pagination{
+	li > a > span{
+		font-family: arial;
+		font-size: 12px;
 	}
 }

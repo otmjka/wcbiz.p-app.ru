@@ -6,19 +6,21 @@
   padding-left: 0;
   margin: $line-height-computed 0;
   border-radius: $border-radius-base;
-
+  font-size: 12px;
   > li {
-    display: inline; // Remove list-style and block-level defaults
+    display: inline-block; // Remove list-style and block-level defaults
+    margin-right: 9px;
     > a,
     > span {
       position: relative;
       float: left; // Collapse white-space
-      padding: $padding-base-vertical $padding-base-horizontal;
-      line-height: $line-height-base;
+      padding: 2px 5px;
+      line-height: 1;
       text-decoration: none;
       background-color: $pagination-bg;
       border: 1px solid $pagination-border;
       margin-left: -1px;
+      color: #fff;
     }
     &:first-child {
       > a,
@@ -28,6 +30,7 @@
       }
     }
     &:last-child {
+      margin-right: 0;
       > a,
       > span {
         @include border-right-radius($border-radius-base);

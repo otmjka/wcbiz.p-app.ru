@@ -388,8 +388,9 @@ $nav-pills-active-link-hover-color:         #fff !default;
 // Pagination
 // -------------------------
 
-$pagination-bg:                        #fff !default;
-$pagination-border:                    #ddd !default;
+//$pagination-bg:                        #fff !default;
+$pagination-bg:                        #878787 !default;
+$pagination-border:                    #878787 !default;
 
 $pagination-hover-bg:                  $gray-lighter !default;
 
@@ -479,18 +480,20 @@ $label-link-hover-color:      #fff !default;
 
 // Modals
 // -------------------------
-$modal-inner-padding:         20px !default;
+$modal-inner-padding:         14px 15px 5px !default;
 
-$modal-title-padding:         15px !default;
+$modal-title-padding:         6px 15px !default;
 $modal-title-line-height:     $line-height-base !default;
 
-$modal-content-bg:                             #fff !default;
-$modal-content-border-color:                   rgba(0,0,0,.2) !default;
-$modal-content-fallback-border-color:          #999 !default;
-
+// $modal-content-bg:                             #fff !default;
+$modal-content-bg:                             #575756 !default;
+// $modal-content-border-color:                   rgba(0,0,0,.2) !default;
+$modal-content-border-color:                   lighten( $modal-content-bg, 5% ) !default;
+// $modal-content-fallback-border-color:          #999 !default;
+$modal-content-fallback-border-color: 					lighten( $modal-content-bg, 5% ) !default;
 $modal-backdrop-bg:           #000 !default;
-$modal-header-border-color:   #e5e5e5 !default;
-$modal-footer-border-color:   $modal-header-border-color !default;
+$modal-header-border-color:   lighten( $modal-content-bg, 5% ) !default;
+$modal-footer-border-color:   transparent !default;
 
 
 // Alerts
