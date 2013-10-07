@@ -5,9 +5,13 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <title></title>
+    <link href="js/select2/select2.css" rel="stylesheet">
+    <link href="js/select2/select2-bootstrap.css" rel="stylesheet">
     <link href="css/bs.css" rel="stylesheet">
+    
     <link href="css/index.css" rel="stylesheet">
     <link href="css/test.css" rel="stylesheet">
+    
     <!--[if lt IE 9]>
       <script src="assets/js/html5shiv.js"></script>
       <script src="assets/js/respond.min.js"></script>
@@ -16,6 +20,17 @@
   </head>
 
   <body>
+    <div class="container">
+      <div class="row">
+        <select id="e1" class="btn btn-info search-bank1" data-placeholder="Выберите наименование банка">
+          <option></option>
+          <option value="AL">Alabama</option>
+          <option value="WY">Wyoming</option>          
+        </select>
+      </div>
+                  
+      
+    </div>
     <div class="container">
     <ul class="pagination">
       <li><a href="#"><span class="back">&#9668;&nbsp;</span> в начало</a></li>
@@ -311,12 +326,26 @@
     <!-- Placed at the end of the document so the pages load faster -->
     
     <script src="js/jquery.js"></script>
-    <script src="dist/js/tooltip.js"></script>    
-    
+    <script src="js/bootstrap.min.js"></script>    
+    <script src="js/select2/select2.js"></script>
+
     <script type="text/javascript">
       jQuery(document).ready( function($){
         $('*[data-toggle=tooltip]').tooltip();
+        //select2 start
+        $( '#e1' ).select2();
+        $( '#e1' ).on('select2-open', function(){
+          $('#select2-drop input.select2-input').attr('placeholder','Например: Сбербанк');
+          console.log('asd');
+        });
+        //{
+        //         placeholder: "Select a State"
+        //     });
+        // $( '#e1' ).select2({
+        //   placeholder: "Выберите наименование банка"
+        // });
       });
+
     </script>      
   </body>
 </html>

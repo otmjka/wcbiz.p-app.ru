@@ -1,4 +1,11 @@
-
+jQuery( document ).ready( function($){
+//Выбор банка
+        var $searchBank = $( '#search-bank' );
+        $searchBank.select2();
+        $searchBank.on('select2-open', function(){
+          $('#select2-drop input.select2-input').attr('placeholder','Например: Сбербанк');
+        });
+});        
 jQuery( document ).ready( function($){
   $( "#from-service" ).imgCombobox();
   $( "#to-service" ).imgCombobox();

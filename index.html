@@ -7,6 +7,8 @@
     <title> | Обмен электронных валют web-capital.biz</title>
     <!-- <link href="dist/css/bootstrap.min.css" rel="stylesheet"> -->
     
+    <link href="js/select2/select2.css" rel="stylesheet">
+    <link href="js/select2/select2-bootstrap.css" rel="stylesheet">
     <link href="css/bs.css" rel="stylesheet">
     <link href="css/index.css" rel="stylesheet">
     
@@ -298,27 +300,11 @@
                 <h4>Информация о банке</h4>
                 <div class="row">
                   <div class="col-sm-7 field-1">
-                   <div class="btn-group">
-                    <button type="button" class="btn btn-info collapsed search-bank" data-toggle="collapse" data-target="#search-collapse-box">Выберите наименование банка</button>
-                    <button class="btn btn-info collapsed mini" data-toggle="collapse" data-target="#search-collapse-box">
-                      <span class="caret"></span>
-                    </button>
-                    
-                    <div class="clearfix"></div>
-        
-                    <div id="search-collapse-box" class="collapse out">
-                      <div class="form-group">
-                        <div class="input-group">
-                          <input type="text" class="form-control" id="search-bank" placeholder="Поиск...">
-                          <span class="input-group-btn">
-                            <button class="btn btn-custom search-icon" type="button">
-                              <span class="glyphicon glyphicon-search"></span>
-                            </button>
-                          </span>
-                        </div><!-- /input-group -->  
-                      </div>
-                    </div><!-- <div id="search-collapse-box" class="collapse out"> -->
-                    </div>
+                    <select id="search-bank" class="btn btn-info search-bank1" data-placeholder="Выберите наименование банка">
+                      <option></option>
+                      <option value="AL">Alabama</option>
+                      <option value="WY">Wyoming</option>          
+                    </select>
                   </div> <!-- <div class="inline-form">             -->
                   
                   <div class="span-sm-4 pull-right">
@@ -533,7 +519,8 @@
   
 
     <script src="js/jquery.js"></script>
-    <script src="dist/js/bootstrap.min.js"></script>    
+    <script src="js/select2/select2.js"></script>
+    <script src="js/bootstrap.min.js"></script>    
     <script src="js/index.js"></script>
     
   </body>
